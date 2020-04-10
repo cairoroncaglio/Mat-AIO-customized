@@ -1,0 +1,95 @@
+ .container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flexbox;
+}
+.container .content{
+    display: flex;
+}
+.line{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.box-combobox{
+    width: 30%;
+    display: flexbox;
+    margin: auto;
+    
+}
+.option{
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.title{
+    font-size: 16pt;
+    color:#54565a;
+    
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-left: -7px;
+}
+
+
+ /* inicial checkbox */
+#custom ::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: #1bb6b2;
+  }
+
+ 
+#custom ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-frame {
+    border: 1px solid #1bb6b2;
+  }
+#custom ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
+    background-color: white;
+    border: 2px solid #1bb6b2;
+    border-radius: 3px;
+  }
+  #custom ::ng-deep.mat-checkbox.mat-accent .mat-checkbox-checkmark-path {
+   /*  stroke-dasharray:3;  bit bit*/
+    stroke: #1bb6b2 !important; 
+    stroke-width: 4px;
+} 
+
+  
+#customOrange ::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: #D65B12;
+  }
+
+ 
+#customOrange ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-frame {
+    border: 1px solid #D65B12;
+  }
+#customOrange ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
+    background-color: white;
+    border: 2px solid #D65B12;
+    border-radius: 3px;
+  }
+#customOrange ::ng-deep.mat-checkbox.mat-accent .mat-checkbox-checkmark-path {
+   /*  stroke-dasharray:3;  bit bit*/
+    stroke: #D65B12 !important; 
+    stroke-width: 4px;
+} 
+
+
+#customRed ::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: #C11A1A;
+  }
+
+ 
+#customRed ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-frame {
+    border: 1px solid #C11A1A;
+  }
+#customRed ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
+    background-color: white;
+    border: 2px solid #C11A1A;
+    border-radius: 3px;
+  }
+#customRed ::ng-deep.mat-checkbox.mat-accent .mat-checkbox-checkmark-path {
+   /*  stroke-dasharray:3;  bit bit*/
+    stroke: #C11A1A !important; 
+    stroke-width: 4px;
+} 

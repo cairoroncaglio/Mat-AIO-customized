@@ -1,0 +1,22 @@
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: red; 
+ }
+ ::ng-deep .mat-focused .mat-form-field-label {
+      color: green;
+    }
+
+    ::ng-deep  .mat-form-field-underline {
+      background-color: green;
+    }
+
+    ::ng-deep  .mat-form-field-ripple {
+      background-color: green;
+    }
+ 
+    .preenchimento-incompleto {
+        background-color: black !important;
+      }
+  
+      .preenchimento-ok {
+        background-color: greenyellow !important;
+      }

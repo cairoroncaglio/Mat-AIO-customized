@@ -1,0 +1,171 @@
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper color="warn">
+
+
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel><label class="lbl-ckbx">Habilidades</label></ng-template>
+      <div class="line">
+        <div class="box">
+          <div class="line-box">
+            <div class="box-nro">
+              <label class="lbl-nro">1</label>
+            </div>
+            <div class="box-label">
+              <label class="lbl-title" id="lbl-title-1"> Quais máquinas você sabe operar?</label>
+            </div>
+          </div>
+          <div class="line-checkbox">
+            <div class="box-check-box">
+              <div class="option-checkbox" id="optckbxAlpha">
+                <mat-checkbox id="ckbx"><label class="lbl-ckbx">Lavadora</label></mat-checkbox>
+              </div>
+              <div class="option-checkbox">
+                <mat-checkbox id="ckbx1"><label class="lbl-ckbx">Enchedora</label></mat-checkbox>
+              </div>
+              <div class="option-checkbox">
+                <mat-checkbox id="ckbx2"><label class="lbl-ckbx">Paletizadora</label></mat-checkbox>
+              </div>
+              <div class="option-checkbox">
+                <mat-checkbox id="ckbx3"><label class="lbl-ckbx">Rotuladora</label></mat-checkbox>
+              </div>
+              <div class="option-checkbox" id="optckbxOmega">
+                <mat-checkbox id="ckbx4"><label class="lbl-ckbx">PZ</label></mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="gray-row"></div>
+          <button mat-button matStepperNext color="primary" class="btnAvancar2"><label
+              class="mod16pt">Avançar</label></button>
+        </div>
+      </div>
+    </form>
+  </mat-step>
+
+
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel> <label class="lbl-ckbx">Habilidades de Manutenção</label></ng-template>
+      <div class="line">
+        <div class="box">
+          <div class="line-box">
+            <div class="box-nro">
+              <label class="lbl-nro">2</label>
+            </div>
+            <div class="box-label">
+              <label class="lbl-title" id="lbl-title-2">Quais máquinas você sabe dar manutenção ?</label>
+            </div>
+          </div>
+          <div class="line-checkbox">
+            <div class="box-check-box">
+              <div class="option-checkbox" id="optckbxAlpha">
+                <mat-checkbox id="ckbx5" color="primary"><label class="lbl-ckbx">Lavadora</label></mat-checkbox>
+              </div>
+              <div class="option-checkbox">
+                <mat-checkbox id="ckbx6" color="primary"><label class="lbl-ckbx">Enchedora</label></mat-checkbox>
+              </div>
+              <div class="option-checkbox">
+                <mat-checkbox id="ckbx7" color="primary"><label class="lbl-ckbx">Paletizadora</label></mat-checkbox>
+              </div>
+              <div class="option-checkbox">
+                <mat-checkbox id="ckbx8" color="primary"><label class="lbl-ckbx">Rotuladora</label></mat-checkbox>
+              </div>
+              <div class="option-checkbox" id="optckbxOmega">
+                <mat-checkbox id="ckbx9" color="primary"><label class="lbl-ckbx">PZ</label></mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="gray-row"></div>
+          <button mat-flat-button matStepperPrevious color="warn"><label class="mod16pt">Voltar</label></button>
+          <button mat-button matStepperNext color="primary" class="btnAvancar2"><label
+              class="mod16pt">Avançar</label></button>
+        </div>
+      </div>
+    </form>
+  </mat-step>
+
+
+  <mat-step [stepControl]="thirdFormGroup" state="phone" >
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel> <label class="lbl-ckbx">Habilidades de Manutenção</label></ng-template>
+      <div class="line">
+        <div class="box">
+          <div class="line-box">
+            <div class="box-nro">
+              <label class="lbl-nro">3</label>
+            </div>
+            <div class="box-label">
+              <label class="lbl-title" id="lbl-title-3">Quem você indica para substituir você durante sua ausência
+                ?</label>
+            </div>
+          </div>
+          <div class="line-checkbox">
+            <div class="box-check-box" id="box-select">
+              <mat-form-field color="warn" appearance="outline">
+                <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
+                <mat-select [formControl]="toppings" multiple>
+                  <mat-select-trigger>
+                    {{toppings.value ? toppings.value[0] : ''}}
+                    <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                      (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                    </span>
+                  </mat-select-trigger>
+                  <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="gray-row"></div>
+          <button mat-flat-button color="warn" class="btnAvancar"><label class="mod16pt">Avançar</label></button>
+        </div>
+      </div>
+    </form>
+  </mat-step>
+
+
+
+
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+
+</mat-horizontal-stepper>
+
+
+
+
+<div class="secundary-theme"> <----- wrapper theme class
+  <button mat-raised-button (click)="isLinear = !isLinear" id="toggle- 
+   linear">
+         {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+       </button>
+       <mat-horizontal-stepper [linear]="isLinear" #stepper>
+         <mat-step [stepControl]="firstFormGroup">
+           <form [formGroup]="firstFormGroup">
+             <ng-template matStepLabel>Fill out your name</ng-template>
+             <mat-form-field>
+               <input matInput placeholder="Last name, First name" 
+               formControlName="firstCtrl" required>
+             </mat-form-field>
+             <div>
+               <button mat-button matStepperNext>Next</button>
+             </div>
+           </form>
+         </mat-step>
+      
+         
+
+         <mat-step>
+           <ng-template matStepLabel>Done</ng-template>
+           You are now done.
+           <div>
+             <button mat-button matStepperPrevious>Back</button>
+             <button mat-button (click)="stepper.reset()">Reset</button>
+           </div>
+         </mat-step>
+       </mat-horizontal-stepper>

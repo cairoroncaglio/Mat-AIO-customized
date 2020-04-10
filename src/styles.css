@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    background-image: linear-gradient(#f2f2f2, #f9f9f9); }
+
+    #lbl-button-min{
+    position: relative;
+    top:-4px;
+        margin-bottom: 3px!important;
+    }
+    
+    #big-button{
+        width: 196px;
+        height: 48px;
+        font-size: 14pt;
+        }
+    #medium-button{
+        width: 196px;
+        height: 40px;
+        font-size: 14pt;
+        }
+    #small-button{
+        width: 196px;
+        height: 32px;
+        font-size: 12pt;
+        }
+    #little-button{
+        width: 32px;
+        height: 32px;
+        font-size: 8pt;
+        }
+
+    .mat-button-disable{
+        color:#c4c4c4;
+        
+      
+      }
+      .mat-raised-button-disable{
+        color:#c4c4c4;
+        background-color: #f2f2f2f2;
+        -webkit-box-shadow: 2px 2px 8px white; 
+        -moz-box-shadow: 2px 2px 8px white;
+        box-shadow: 0px 0px 3px #dcdcdc(36, 36, 37, 0.466);
+      
+      }
+      .mat-flat-button-disable{
+        color:#c4c4c4;
+        background-color: #f2f2f2f2;
+      
+      }
+      .mat-stroked-button-disable{
+        color:#c4c4c4;
+        background-color: #f2f2f2f2;
+        border: solid 1px #dcdcdc;
+      }
+
+      .mat-raised-button.mat-orange{
+        background-color: white;
+        color: #ff6a13;
+        border: solid 0.5px #ff6a13;
+     }
+    
+     .mat-raised-button.mat-green{
+        background-color: white;
+        color: #1bb6b2;
+        border: solid 0.5px #1bb6b2;
+     }
+    
+     .mat-raised-button.mat-red{
+        background-color: white;
+        color: #FF4040;
+        border: solid 0.5px #FF4040;
+     }
+    
+     .myClass{
+        color : red;
+      }
+     
+        
+        
+
+
+
+

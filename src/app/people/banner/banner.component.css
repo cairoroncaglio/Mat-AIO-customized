@@ -1,0 +1,47 @@
+
+.banner{
+    width: 100%;
+    height: 64px;
+    padding: 40px 0;
+    background-image: linear-gradient(to right ,WHITE, white);
+}
+.banner .container{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.banner .container .vertical-flex{
+    font-family: "Moderat-Regular", sans-serif;
+    font-size: 13px;
+    color: #54565a;
+    display: flex;
+}
+.banner .container .vertical-flex .box-return{
+    display: flex;
+    margin-left: -680px;
+    
+}
+.banner .container .vertical-flex .box-title{
+    display: flexbox;
+    margin-left: 30px;
+    margin: auto;
+    
+}
+.banner .container .vertical-flex .box-title .title{
+    font-size: 32px;
+    font-family: "AB InBev Headlines", sans-serif;
+    color: #54565a;
+    
+}
+.banner .container .vertical-flex  .subtitle{
+    font-size: 16px;
+    color: #adaeb6;
+    font-family: "Moderat-Regular", sans-serif;
+    padding: 5px;
+}
+ .row-banner{
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #FF6A13,rgb(186, 12, 47));
+    margin-bottom: 5px;
+    
+}

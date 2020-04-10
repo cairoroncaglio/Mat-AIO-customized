@@ -1,0 +1,11 @@
+.header{
+    width: 100vw;
+    height: 62px;
+    background-color: rgb(249,249,249);
+    box-shadow: 1px 1px 3px #54565a91;
+}
+.row-header{
+    width: 100vw;
+    height: 2px;
+    background-image: linear-gradient(to right, #dcdcdc,#f2f2f2);
+}

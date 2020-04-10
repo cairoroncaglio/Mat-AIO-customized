@@ -1,0 +1,218 @@
+.cadastro-habilidades{
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(#f2f2f2, #f9f9f9);
+    display: flexbox;
+}
+
+.line{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.line .box{
+    width:60%;
+    height: 100%;
+    margin: auto;
+    display: flexbox;
+    
+}
+.line .box .line-box{
+    width: 100%;
+    height: 130px;
+    display: flex;
+}
+
+.line .box .line-box .box-nro{
+    width: 20%;
+    margin-right: 2%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 8px white; 
+    -moz-box-shadow: 2px 2px 8px white;
+    box-shadow: 0px 0px 3px rgba(36, 36, 37, 0.178);
+    text-align: center;
+    display: flex;
+}
+.line .box .line-box .box-nro .lbl-nro{
+    font-size: 64pt;
+    font-family: 'AB InBev Headlines', sans-serif;
+    margin-top:60px;
+    margin-left: 75px;
+    color: #1bb6b2;
+
+}
+.line .box .line-box .box-label{
+    width: 78%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 8px white; 
+    -moz-box-shadow: 2px 2px 8px white;
+    box-shadow: 0px 0px 3px rgba(36, 36, 37, 0.178);
+    display: flex;
+}
+.line .box .line-box .box-label .lbl-title{
+    margin-top:60px;
+    
+    color: #54565a;
+    
+    font-family: 'AB InBev Headlines', sans-serif;
+}
+.line .box .line-box .box-label #lbl-title-1{
+    margin-left: 115px;
+    font-size: 24pt;
+}
+
+.line .box .line-box .box-label #lbl-title-2{
+    margin-left: 38px;
+    font-size: 24pt;
+}
+.line .box .line-box .box-label #lbl-title-3{
+    margin-left: 38px;
+    font-size: 18pt;
+}
+.line .box .line-checkbox{
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    height: auto;
+    -webkit-box-shadow: 2px 2px 8px white; 
+    -moz-box-shadow: 2px 2px 8px white;
+    box-shadow: 0px 0px 3px rgba(36, 36, 37, 0.178);
+    display: flex;
+}
+
+.line .box .line-checkbox .box-check-box{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flexbox;
+}
+.line .box .line-checkbox .box-check-box .option-checkbox #optckbxAlpha{
+    margin-top: 30px;
+}
+.line .box .line-checkbox .box-check-box .option-checkbox #optckbxOmega{
+    margin-bottom: 30px;
+}
+.line .box .line-checkbox .box-check-box .option-checkbox{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-top: 5px;
+}
+
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    /* border-color: black;
+    width: 50px;
+    height: 50px; */
+  }
+
+  .line .box .line-checkbox .box-check-box .option-checkbox .lbl-ckbx{
+      margin-left: 30px;;
+      font-family: "Moderat-Regular", sans-serif;
+      font-size: 14pt;
+      color:#54565a;
+  }
+    
+  .line .box .gray-row{
+    background-image: linear-gradient(#54565a2a,#dcdcdc);
+    height: 2px;
+    margin-top: 20px;
+  }
+  .line .box .buttons{
+      width: 100%;
+      display: flex;
+      height: 200px;
+      background-color: white;
+      border-radius: 4px;
+      -webkit-box-shadow: 2px 2px 8px white; 
+      -moz-box-shadow: 2px 2px 8px white;
+      box-shadow: 0px 0px 3px rgba(36, 36, 37, 0.178);
+      margin-top: 20px;
+  }
+  .line .box .buttons .line-buttons{
+      margin: auto;
+      display: flex;
+  }
+ 
+  .line .box .buttons .line-buttons .box-back{
+    width: 25%;
+    height: 100%;
+    
+  }
+  .line .box .buttons .line-buttons .box-next{
+    width: 25%;
+    height: 100%;
+    
+  }
+  .line .box .buttons .line-buttons .box-empty{
+      width: 50%;
+  }
+
+   .btnBack180px-flat{
+    width: 180px;
+    border: solid 1px white;
+  }
+  .btnNext180px-primary{
+    width: 180px;
+    background-color: white;
+    border:solid 1px #ff6a13 ;
+  }
+  
+  .mod16pt{
+    font-family: "Moderat-Regular", sans-serif;
+    font-size: 16pt;
+  }
+  .btnAvancar{
+      width: 180px;
+      border: solid 1px white;
+  }
+  .btnAvancar2{
+    width: 180px;
+      background-color: white;
+      border:solid 1px #ff6a13 ;
+  }
+
+  
+.ppl-time{
+    font-size: 8pt;
+    color:#54565a;
+    font-family: "Moderat-Regular", sans-serif;
+}
+
+.box-check-box ::ng-deep .mat-form-field-appearance-outline {
+    width: 400px;
+    height: 15px;
+    
+    background-color: white;
+    font-family: "Moderat-Regular", sans-serif;
+  }
+  #box-select{
+      height: 200px;
+  }
+  
+  .btnBig-only-label{
+      width: 144px;
+      height: 80px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: 32px;
+      margin-right: 32px;
+  }
+  .btnAverage-only-label{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .btnLittle{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
