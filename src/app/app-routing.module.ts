@@ -1,3 +1,5 @@
+import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocomplete.component';
+import { CardComponent } from './componentsMatAIO/card/card.component';
 import { CheckBoxPlusRadioButtonComponent } from './componentsMatAIO/radio-button/check-box-plus-radio-button.component';
 import { ComboboxComponent } from './componentsMatAIO/combobox/combobox.component';
 import { ButtonsComponent } from './componentsMatAIO/buttons/buttons.component';
@@ -13,11 +15,13 @@ import { CheckboxComponent } from './componentsMatAIO/checkbox/checkbox.componen
 const routes: Routes = [
   {path: '', component: HeaderComponent, children: [{path: 'banner', component: BannerComponent}]},
   {path: '', component: HeaderComponent, children: [{path: 'banner', component: BannerComponent, children: [{path: 'cadastro-habilidades', component: CadastroHabilidadesComponent}]}]}, 
-  {path: '', component: HeaderComponent, children: [{path: 'stepper', component: StepperComponent}]},
-  {path: '', component: HeaderComponent, children: [{path: 'buttons', component: ButtonsComponent}]},
-  {path: '', component: HeaderComponent, children: [{path: 'combo-box', component: ComboboxComponent}]},
+  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'stepper', component: StepperComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'checkbox', component: CheckboxComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'radio-button', component: CheckBoxPlusRadioButtonComponent}]}]},
+  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'buttons', component: ButtonsComponent}]}]},
+  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'combo-box', component: ComboboxComponent}]}]},
+  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'card', component: CardComponent}]}]},
+  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'autocomplete', component: AutocompleteComponent}]}]},
 ];
 
 @NgModule({

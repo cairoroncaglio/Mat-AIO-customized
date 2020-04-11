@@ -23,3 +23,31 @@
 .box-buttons{
     padding: 4px;
 }
+
+.myClass{
+  color : red;
+}
+.mat-raised-button-disable{
+  color:#c4c4c4;
+  background-color: #f2f2f2f2;
+  -webkit-box-shadow: 2px 2px 8px white; 
+  -moz-box-shadow: 2px 2px 8px white;
+  box-shadow: 0px 0px 3px #dcdcdc(36, 36, 37, 0.466);
+
+}
+.mat-flat-button-disable{
+  color:#c4c4c4;
+  background-color: #f2f2f2f2;
+
+}
+.mat-stroked-button-disable{
+  color:#c4c4c4;
+  background-color: #f2f2f2f2;
+  border: solid 1px #dcdcdc;
+}
+
+.mat-button-disable{
+  color:#c4c4c4;
+  
+
+}

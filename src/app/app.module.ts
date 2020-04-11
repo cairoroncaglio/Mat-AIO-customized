@@ -18,6 +18,8 @@ import { ComboboxComponent } from './componentsMatAIO/combobox/combobox.componen
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 import { CheckBoxPlusRadioButtonComponent } from './componentsMatAIO/radio-button/check-box-plus-radio-button.component';
 import { CheckboxComponent } from './componentsMatAIO/checkbox/checkbox.component';
+import { CardComponent } from './componentsMatAIO/card/card.component';
+import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocomplete.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { CheckboxComponent } from './componentsMatAIO/checkbox/checkbox.componen
     ButtonsComponent,
     ComboboxComponent,
     CheckBoxPlusRadioButtonComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    CardComponent,
+    AutocompleteComponent
   ],
   imports: [
     AppRoutingModule,

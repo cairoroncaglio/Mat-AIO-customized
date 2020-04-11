@@ -1,0 +1,81 @@
+<div class="container">
+
+
+    <div class="content">
+        <div class="autocomplete">
+            <form [formGroup]="peopleForm" id="autocompleteFrst">
+                <mat-form-field appearance="outline">
+                    <mat-label>People</mat-label>
+                    <input type="text" matInput placeholder="People" formControlName="peopleGroup" required
+                        [matAutocomplete]="autoGroup">
+                    <mat-autocomplete #autoGroup="matAutocomplete">
+                        <mat-optgroup *ngFor="let group of peopleGroupOptions | async" [label]="group.letter">
+                            <mat-option *ngFor="let name of group.names" [value]="name">
+                                {{name}}
+                            </mat-option>
+                        </mat-optgroup>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </form>
+        </div>
+
+        <div class="content">
+            <div class="autocomplete">
+                <form class="example-form" id="ninjas">
+                    <mat-form-field class="example-full-width" appearance="standard" color="accent">
+                        <mat-label>People</mat-label>
+                        <input matInput placeholder="People" aria-label="People" [matAutocomplete]="auto"
+                            [formControl]="peopleCtrl">
+                        <mat-autocomplete #auto="matAutocomplete">
+                            <mat-option *ngFor="let people of filteredPeople | async" [value]="people.name">
+                                <img class="example-option-img" aria-hidden [src]="people.pic" height="25">
+                                <span>{{people.name}}</span>
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </form>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="autocomplete">
+                <form [formGroup]="peopleForm" id="autocompleteFrst">
+                    <mat-form-field appearance="standard">
+                        <mat-label>People</mat-label>
+                        <input type="text" matInput placeholder="People" formControlName="peopleGroup" required
+                            [matAutocomplete]="autoGroup">
+                        <mat-autocomplete #autoGroup="matAutocomplete">
+                            <mat-optgroup *ngFor="let group of peopleGroupOptions | async" [label]="group.letter">
+                                <mat-option *ngFor="let name of group.names" [value]="name">
+                                    {{name}}
+                                </mat-option>
+                            </mat-optgroup>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </form>
+            </div>
+    
+            <div class="content">
+                <div class="autocomplete">
+                    <form class="example-form" id="ninjas">
+                        <mat-form-field class="example-full-width" appearance="outline" color="accent">
+                            <mat-label>People</mat-label>
+                            <input matInput placeholder="People" aria-label="People" [matAutocomplete]="auto"
+                                [formControl]="peopleCtrl">
+                            <mat-autocomplete #auto="matAutocomplete">
+                                <mat-option *ngFor="let people of filteredPeople | async" [value]="people.name">
+                                    <img class="example-option-img" aria-hidden [src]="people.pic" height="25">
+                                    <span>{{people.name}}</span>
+                                </mat-option>
+                            </mat-autocomplete>
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+
+      
+
+
+
+
+    </div>
