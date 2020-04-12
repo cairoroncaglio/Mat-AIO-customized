@@ -20,6 +20,7 @@ import { CheckBoxPlusRadioButtonComponent } from './componentsMatAIO/radio-butto
 import { CheckboxComponent } from './componentsMatAIO/checkbox/checkbox.component';
 import { CardComponent } from './componentsMatAIO/card/card.component';
 import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocomplete.component';
+import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocompl
     CheckBoxPlusRadioButtonComponent,
     CheckboxComponent,
     CardComponent,
-    AutocompleteComponent
+    AutocompleteComponent,
+    RascunhoComponent
   ],
   imports: [
     AppRoutingModule,

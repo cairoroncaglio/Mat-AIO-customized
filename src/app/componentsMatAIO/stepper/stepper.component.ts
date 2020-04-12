@@ -9,6 +9,9 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class StepperComponent implements OnInit {
   isLinear = false;
+  flatOrange=false;
+  flatOrange1=false;
+  flatRed=false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup:FormGroup;

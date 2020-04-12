@@ -1,3 +1,4 @@
+import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.component';
 import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocomplete.component';
 import { CardComponent } from './componentsMatAIO/card/card.component';
 import { CheckBoxPlusRadioButtonComponent } from './componentsMatAIO/radio-button/check-box-plus-radio-button.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'combo-box', component: ComboboxComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'card', component: CardComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'autocomplete', component: AutocompleteComponent}]}]},
+  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'rascunho', component: RascunhoComponent}]}]},
 ];
 
 @NgModule({

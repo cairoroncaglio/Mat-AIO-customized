@@ -1,22 +1,171 @@
+.line{
+  width: 100%;
+  height: 70vh;
+  
+}
+.head{
+  padding-top: 2%;
+  display: flex;
+  width: 50%;
+  height: 120px;
+  margin: auto;
+}
+.head .box-nro{
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 8px white; 
+  -moz-box-shadow: 2px 2px 8px white;
+  box-shadow: 0px 0px 3px rgba(36, 36, 37, 0.178);
+}
+.head .box-nro .lbl-nro{
+  font-size: 64pt;
+  color:#1bb6b1;
+  font-family: "AB InBev Headlines", sans-serif;
+  position: relative;
+  top: 39%;
+  left: 37%;
+}
+.head .title{
+  width: 70%;
+  height: 100%;
+  margin-left: 5%;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 8px white; 
+  -moz-box-shadow: 2px 2px 8px white;
+  box-shadow: 0px 0px 3px rgba(36, 36, 37, 0.178);
+}
+.head .title .lbl-title{
+  font-size: 20pt;
+  color:#54565a;
+  font-family: "AB InBev Headlines", sans-serif;
+  position: relative;
+  top: 39%;
+  left: 6%;
+}
+.container{
+  padding-top: 1%;
+  display: flex;
+  width: 50%;
+  height: 250px;
+  margin: auto;
+  padding-bottom: 1%;
+  
+}
+.container .content{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 8px white; 
+  -moz-box-shadow: 2px 2px 8px white;
+  box-shadow: 0px 0px 3px rgba(36, 36, 37, 0.178);
+  display: flex;
+  
+}
+.container .content .box-content{
+  width: 45%;
+  height: 100%;
+  display: flexbox;
+  margin: auto;
+}
+.container .content .box-content .title{
+  width: 100%;
+  height: 10%;   
+}
+
+.container .content .box-content .option{
+  width: 100%;
+  height: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: solid 0.5px #1bb6b136;   
+}
+
+.container .content .box-content .option .lbl-ckbx{
+  padding-left: 70px;
+font-size: 16pt;
+color:#54565a;
+font-family: "Moderat", sans-serif;
+}
+
+.line .buttons{
+  display: flex;
+  width: 50%;
+  height: 80px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 8px white; 
+  -moz-box-shadow: 2px 2px 8px white;
+  box-shadow: 0px 0px 3px rgba(36, 36, 37, 0.178); 
+}
+
+.line .buttons .box-back{
+  width: 30%;
+  height: 100%;
+  display: flex;  
+}
+
+.line .buttons .box-middle{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  
+}
+.line .buttons .box-next{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  
+}
+/* inicial checkb
+ox */
+#custom ::ng-deep .mat-checkbox .mat-checkbox-frame {
+  border-color: #1bb6b2;
+}
+
+
+#custom ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-frame {
+  border: 1px solid #1bb6b2;
+}
+#custom ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
+  background-color: white;
+  border: 2px solid #1bb6b2;
+  border-radius: 3px;
+}
+#custom ::ng-deep.mat-checkbox.mat-accent .mat-checkbox-checkmark-path {
+ /*  stroke-dasharray:3;  bit bit*/
+  stroke: #1bb6b2 !important; 
+  stroke-width: 4px;
+} 
+
+
+
+
 ::ng-deep .mat-step-header .mat-step-icon-selected {
-    background-color: red; 
+    background-color: #1bb6b2; 
  }
  ::ng-deep .mat-focused .mat-form-field-label {
       color: green;
     }
 
-    ::ng-deep  .mat-form-field-underline {
+  ::ng-deep  .mat-form-field-underline {
       background-color: green;
     }
 
-    ::ng-deep  .mat-form-field-ripple {
+  ::ng-deep  .mat-form-field-ripple {
       background-color: green;
     }
  
-    .preenchimento-incompleto {
+  .preenchimento-incompleto {
         background-color: black !important;
       }
   
-      .preenchimento-ok {
+  .preenchimento-ok {
         background-color: greenyellow !important;
       }
+
+      

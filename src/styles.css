@@ -63,6 +63,11 @@ body {
         color: #ff6a13;
         border: solid 0.5px #ff6a13;
      }
+     .mat-raised-button.mat-flat-orange{
+      background-color: #ff6a13;
+      color:white;
+      border: solid 0.5px #ff6a13;
+   }
     
      .mat-raised-button.mat-green{
         background-color: white;
@@ -75,6 +80,12 @@ body {
         color: #FF4040;
         border: solid 0.5px #FF4040;
      }
+     .mat-raised-button.mat-flat-red{
+      background-color: #FF4040;
+      color:white;
+      border: solid 0.5px #FF4040;
+   }
+
     
      .myClass{
         color : red;
