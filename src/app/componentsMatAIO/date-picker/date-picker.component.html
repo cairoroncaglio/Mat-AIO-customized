@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="content">
+
+    <!-- <div class="date-picker">
+      <mat-form-field color="accent">
+        <input matInput placeholder="Choose a date" [satDatepicker]="picker" [value]="date" >
+        <sat-datepicker #picker [rangeMode]="true"></sat-datepicker>
+        <sat-datepicker-toggle matSuffix [for]="picker"></sat-datepicker-toggle>
+      </mat-form-field>
+    </div>
+  </div> -->
+
+
+    
+      <sat-calendar [rangeMode]="true" (dateRangesChange)="inlineRangeChange($event)">
+      </sat-calendar>
+    </div>
+
+  </div>

@@ -88,3 +88,33 @@
     margin-top: 10%;
    
   }
+  #customOrange ::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle , .mat-radio-outer-circle {
+    border-color: #FF6B13 !important;
+  }
+  #customOrange ::ng-deep .mat-radio-outer-circle , .mat-radio-outer-circle {
+    border-color: #FF6B13 !important;
+  }
+  #customOrange ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle{
+    background-color: #FF6B13 !important;
+    width: 16px;
+    height: 16px;
+    margin-left: 10%;
+    margin-top: 10%;
+   
+  }
+
+  #customGreen ::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle , .mat-radio-outer-circle {
+    border-color: #1bb6b2 !important;
+  }
+  #customGreen ::ng-deep .mat-radio-outer-circle , .mat-radio-outer-circle {
+    border-color: #1bb6b2 !important;
+  }
+  #customGreen ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle{
+    background-color: #1bb6b2 !important;
+    width: 16px;
+    height: 16px;
+    margin-left: 10%;
+    margin-top: 10%;
+   
+  }
+  

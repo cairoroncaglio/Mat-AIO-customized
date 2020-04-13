@@ -41,9 +41,28 @@
         <div class="content-rb">
             <mat-radio-group class="UXIO-theme" aria-label="Selecione uma opção" color="accent">
                 <div class="box-flex">
-                    <div class="content-title-rb"> <label class="lbl-radio-title">Selecione uma opção ( NORMAL ACCENT ) :
+                    <div class="content-title-rb"> <label class="lbl-radio-title">Selecione uma opção ( CUSTOM ORANGE ACCENT ) :
                         </label></div>
-                    <div class="content-rb">
+                    <div class="content-rb" id="customOrange">
+                        <mat-radio-button value="6" [disabled]="false"><label class="lbl-radio-flex">Option 1</label>
+                        </mat-radio-button>
+                        <mat-radio-button value="7"><label class="lbl-radio-flex">Option 2</label></mat-radio-button>
+                        <mat-radio-button value="8"><label class="lbl-radio-flex">Option 3</label></mat-radio-button>
+                        <mat-radio-button value="9"><label class="lbl-radio-flex">Option 4</label></mat-radio-button>
+                        <mat-radio-button value="10"><label class="lbl-radio-flex">Option 5</label></mat-radio-button>
+                    </div>
+                </div>
+            </mat-radio-group>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-rb">
+            <mat-radio-group class="UXIO-theme" aria-label="Selecione uma opção" color="accent">
+                <div class="box-flex">
+                    <div class="content-title-rb"> <label class="lbl-radio-title">Selecione uma opção ( CUSTOM ORANGE ACCENT ) :
+                        </label></div>
+                    <div class="content-rb" id="customGreen">
                         <mat-radio-button value="6" [disabled]="false"><label class="lbl-radio-flex">Option 1</label>
                         </mat-radio-button>
                         <mat-radio-button value="7"><label class="lbl-radio-flex">Option 2</label></mat-radio-button>

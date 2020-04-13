@@ -1,3 +1,5 @@
+import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, SatDatepickerModule } from 'saturn-datepicker'
+import { MAT_MOMENT_DATE_FORMATS, MomentDateAdapter } from '@angular/material-moment-adapter'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DemoMaterialModule } from './angular-material';
@@ -21,7 +23,12 @@ import { CheckboxComponent } from './componentsMatAIO/checkbox/checkbox.componen
 import { CardComponent } from './componentsMatAIO/card/card.component';
 import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocomplete.component';
 import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.component';
+import { DatePickerComponent } from './componentsMatAIO/date-picker/date-picker.component';
 
+export interface SatDatepickerRangeValue<D> {
+  begin: D | null;
+  end: D | null;
+}
 
 @NgModule({
   declarations: [
@@ -36,7 +43,8 @@ import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.componen
     CheckboxComponent,
     CardComponent,
     AutocompleteComponent,
-    RascunhoComponent
+    RascunhoComponent,
+    DatePickerComponent
   ],
   imports: [
     AppRoutingModule,
@@ -47,13 +55,16 @@ import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.componen
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    SatDatepickerModule
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' },
   },  {
     provide: STEPPER_GLOBAL_OPTIONS,
     useValue: { displayDefaultIndicatorType: false }
-  }
+  },
+  {provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE]},
+  {provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS},
      
   ],
   bootstrap: [AppComponent]
