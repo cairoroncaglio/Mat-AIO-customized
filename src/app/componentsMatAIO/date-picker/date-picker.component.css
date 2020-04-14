@@ -40,13 +40,8 @@ mat-form-field {
 }
 
 .content ::ng-deep .mat-calendar-table-header-divider{
- 
-  visibility: hidden!important;
-  
+   visibility: hidden!important; 
 }
-
-
- 
 
 .content ::ng-deep .mat-calendar-body-today:not(.mat-calendar-body-selected) {
   border-color: rgba(116, 199, 198, 0.911)!important;
@@ -68,7 +63,7 @@ mat-form-field {
 .content ::ng-deep .mat-calendar-body-label{
   color:#54565a!important;
   visibility: hidden!important;
-  font-size: 15pt;
+  font-size: 9pt!important;
   font-family: "AB InBev Headlines", sans-serif!important;
 }
 
@@ -76,12 +71,13 @@ mat-form-field {
   width: 200px!important;
   background-color: white!important;
   text-align: left!important;
-  font-size: 17pt;
+  color:rgba(0, 0, 0, 0.849)!important;
+  font-size: 16pt;
   font-family: "AB InBev Headlines", sans-serif!important;
 }
 .content ::ng-deep th{
   color:#54565a!important;
-  font-size: 17pt!important;
+  font-size: 14pt!important;
   font-family: "AB InBev Headlines", sans-serif!important;
 }
   

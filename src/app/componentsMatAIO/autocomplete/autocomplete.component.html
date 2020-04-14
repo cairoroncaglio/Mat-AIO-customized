@@ -64,7 +64,7 @@
                                 [formControl]="peopleCtrl">
                             <mat-autocomplete #auto="matAutocomplete">
                                 <mat-option *ngFor="let people of filteredPeople | async" [value]="people.name">
-                                    <img class="example-option-img" aria-hidden [src]="people.pic" height="25">
+                                    <ng-template>{{people.name.chartAt(2)}}</ng-template>
                                     <span>{{people.name}}</span>
                                 </mat-option>
                             </mat-autocomplete>
@@ -77,5 +77,16 @@
 
 
 
+            <div class="content">
+                <div class="autocomplete">
+                    <mat-list>
+                        <mat-list-item *ngFor="let people of filteredPeople ">
+                          <ng-template>{{people.name.chartAt(0)}}</ng-template>
+                          <h3 matLine> {{people.name }} </h3>
+                          <mat-divider></mat-divider>
+                        </mat-list-item>
+                      </mat-list>
+                </div>
+            </div>
 
     </div>

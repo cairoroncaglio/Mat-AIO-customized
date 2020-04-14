@@ -1,74 +1,286 @@
 <div class="combo-box-main">
 
+  <div class="models">
 
 
-  <div class="box-combobox">
-    <div class="box-modelo-view-combobox">
+    <div class="coluna1">
 
-      <div class="box-select40px300px">
-        <mat-form-field color="accent" appearance="outline">
-          <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
-          <mat-select [formControl]="toppings" multiple>
-            <mat-select-trigger>
-              {{toppings.value ? toppings.value[0] : ''}}
-              <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
-                (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
-              </span>
-            </mat-select-trigger>
-            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <div class="arrow-box">
-          <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+
+
+      <div class="box-select">
+        <div class="center" id="Warn">
+          <mat-form-field appearance="outline" color="warn">
+            <mat-label>Pessoas do time</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let ppl of people" [value]="ppl.value">
+                {{ppl.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-select" id="customBasic">
+        <div class="center">
+          <mat-form-field appearance="outline" color="warn">
+            <mat-label>Pessoas do time</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let ppl of people" [value]="ppl.value">
+                {{ppl.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-select" id="customDarkGray">
+        <div class="center">
+          <mat-form-field appearance="outline" color="accent">
+            <mat-label>Pessoas do time</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let ppl of people" [value]="ppl.value">
+                {{ppl.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-select">
+        <div class="center" id="customAccent">
+          <mat-form-field appearance="outline" color="accent">
+            <mat-label>Pessoas do time</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let ppl of people" [value]="ppl.value">
+                {{ppl.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
         </div>
       </div>
 
 
-    </div>
+      <div class="box-select">
+        <div class="center" id="customPrimaryM">
+          <mat-form-field appearance="outline" color="primary">
+            <mat-label>Pessoas do time</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let ppl of people" [value]="ppl.value">
+                {{ppl.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
 
-    <div class="box-modelo-view-combobox">
-
-      <div class="box-select40px300px">
-        <mat-form-field color="warn" appearance="outline">
-          <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
-          <mat-select [formControl]="toppings" multiple>
-            <mat-select-trigger>
-              {{toppings.value ? toppings.value[0] : ''}}
-              <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
-                (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
-              </span>
-            </mat-select-trigger>
-            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <div class="arrow-box">
-          <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+      <div class="box-select">
+        <div class="center" id="customPrimary">
+          <mat-form-field appearance="outline" color="primary">
+            <mat-label>Pessoas do time</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let ppl of people" [value]="ppl.value">
+                {{ppl.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
         </div>
       </div>
 
 
-    </div>
-    <div class="box-modelo-view-combobox">
+      <div class="box-select">
+        <div class="center" id="customWarn">
+          <mat-form-field appearance="outline" color="primary">
+            <mat-label>Pessoas do time </mat-label>
+            <mat-select>
+              <mat-option *ngFor="let ppl of people" [value]="ppl.value">
+                {{ppl.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
 
-      <div class="box-select40px300px">
-        <mat-form-field color="primary" appearance="outline">
-          <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
-          <mat-select [formControl]="toppings" multiple>
-            <mat-select-trigger>
-              {{toppings.value ? toppings.value[0] : ''}}
-              <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
-                (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
-              </span>
-            </mat-select-trigger>
-            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <div class="arrow-box">
-          <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+    </div>
+
+    <div class="coluna1">
+
+      <div class="box-select">
+        <div class="center" id="customPrimary">
+          <mat-form-field appearance="outline">
+            <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
+            <mat-select [formControl]="toppings" multiple>
+              <mat-select-trigger>
+                {{toppings.value ? toppings.value[0] : ''}}
+                <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                  (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                </span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
         </div>
       </div>
 
 
+      <div class="box-select">
+        <div class="center" id="customPrimaryM">
+          <mat-form-field appearance="outline">
+            <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
+            <mat-select [formControl]="toppings" multiple>
+              <mat-select-trigger>
+                {{toppings.value ? toppings.value[0] : ''}}
+                <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                  (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                </span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-select">
+
+        <div class="center" id="customBasic">
+          
+            <mat-form-field appearance="outline" id="something">
+              <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
+              <mat-select [formControl]="toppings" multiple>
+                <mat-select-trigger  >
+                  {{toppings.value ? toppings.value[0] : ''}}
+                  <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                    (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                  </span>
+                </mat-select-trigger>
+                <mat-option *ngFor="let topping of toppingList" [value]="topping" >{{topping}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div class="arrow-box">
+              <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+            </div>
+          </div>
+        
+
+      </div>
+
+      <div class="box-select">
+        <div class="center" id="customAccent">
+          <mat-form-field appearance="outline" color="accent">
+            <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
+            <mat-select [formControl]="toppings" multiple>
+              <mat-select-trigger>
+                {{toppings.value ? toppings.value[0] : ''}}
+                <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                  (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                </span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box-select">
+        <div class="center" id="customDarkGray">
+          <mat-form-field appearance="outline" color="accent">
+            <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
+            <mat-select [formControl]="toppings" multiple>
+              <mat-select-trigger>
+                {{toppings.value ? toppings.value[0] : ''}}
+                <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                  (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                </span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box-select">
+        <div class="center" id="Warn">
+          <mat-form-field appearance="outline" color="warn">
+            <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
+            <mat-select [formControl]="toppings" multiple>
+              <mat-select-trigger>
+                {{toppings.value ? toppings.value[0] : ''}}
+                <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                  (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                </span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
+      
+      <div class="box-select">
+        <div class="center" id="customWarn">
+          <mat-form-field appearance="outline" color="warn">
+            <mat-label><label class="ppl-time">Pessoas do time</label></mat-label>
+            <mat-select [formControl]="toppings" multiple>
+              <mat-select-trigger>
+                {{toppings.value ? toppings.value[0] : ''}}
+                <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                  (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                </span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="arrow-box">
+            <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+
 
   </div>
+
+  <div class="exemplo-card">
+
+  
+  </div>
+
+</div>

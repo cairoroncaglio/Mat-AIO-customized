@@ -90,7 +90,9 @@ body {
      .myClass{
         color : red;
       }
-     
+     ::ng-deep  mat-stroked-button{
+       border: solid 2px orange;
+     }
         
         
 

@@ -56,41 +56,41 @@
 
   
 #customOrange ::ng-deep .mat-checkbox .mat-checkbox-frame {
-    border-color: #D65B12;
+    border-color: #FF8943;
   }
 
  
 #customOrange ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-frame {
-    border: 1px solid #D65B12;
+    border: 1px solid #FF8943;
   }
 #customOrange ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
     background-color: white;
-    border: 2px solid #D65B12;
+    border: 2px solid #FF8943;
     border-radius: 3px;
   }
 #customOrange ::ng-deep.mat-checkbox.mat-accent .mat-checkbox-checkmark-path {
    /*  stroke-dasharray:3;  bit bit*/
-    stroke: #D65B12 !important; 
+    stroke: #FF8943 !important; 
     stroke-width: 4px;
 } 
 
 
 #customRed ::ng-deep .mat-checkbox .mat-checkbox-frame {
-    border-color: #C11A1A;
+    border-color: rgb(252, 70, 70);
   }
 
  
 #customRed ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-frame {
-    border: 1px solid #C11A1A;
+    border: 1px solid rgb(252, 70, 70);
   }
 #customRed ::ng-deep.mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
     background-color: white;
-    border: 2px solid #C11A1A;
+    border: 2px solid rgb(252, 70, 70);
     border-radius: 3px;
   }
 #customRed ::ng-deep.mat-checkbox.mat-accent .mat-checkbox-checkmark-path {
    /*  stroke-dasharray:3;  bit bit*/
    
-    stroke: #C11A1A !important; 
+    stroke: rgb(252, 70, 70) !important; 
     stroke-width: 4px;
 } 

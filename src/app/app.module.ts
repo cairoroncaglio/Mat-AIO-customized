@@ -24,6 +24,12 @@ import { CardComponent } from './componentsMatAIO/card/card.component';
 import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocomplete.component';
 import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.component';
 import { DatePickerComponent } from './componentsMatAIO/date-picker/date-picker.component';
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeDeAt from '@angular/common/locales/de-at';
+import { CardPlusComponent } from './componentsMatAIO/card-plus/card-plus.component';
+
+registerLocaleData(localeDeAt);
 
 export interface SatDatepickerRangeValue<D> {
   begin: D | null;
@@ -44,7 +50,8 @@ export interface SatDatepickerRangeValue<D> {
     CardComponent,
     AutocompleteComponent,
     RascunhoComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    CardPlusComponent
   ],
   imports: [
     AppRoutingModule,
@@ -58,14 +65,11 @@ export interface SatDatepickerRangeValue<D> {
     SatDatepickerModule
   ],
   providers: [
-    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' },
-  },  {
-    provide: STEPPER_GLOBAL_OPTIONS,
-    useValue: { displayDefaultIndicatorType: false }
-  },
-  {provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE]},
-  {provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS},
-     
+    {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' }},
+    {provide: STEPPER_GLOBAL_OPTIONS,useValue: { displayDefaultIndicatorType: false }},
+    {provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE]},
+    {provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS},
+    { provide: LOCALE_ID, useValue: "en-US" }
   ],
   bootstrap: [AppComponent]
 })

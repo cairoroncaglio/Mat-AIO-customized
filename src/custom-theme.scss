@@ -2,15 +2,12 @@
 @import "~ng-pick-datetime/assets/style/picker.min.css";
 @import '~saturn-datepicker/theming';
 
-
-
-
 $mat-orangeC: (
   50:  #FFCCAF,100: #FFA36C,200: #FFB489,
   300: #DA8656,400: #FF8943,500: #FF6B13,
   600: #B9612F,700: #D65B12,800: #AD4304,
-  900: #A33D00,A100:purple,A200: purple,
-  A400:purple, A700:purple,
+  900: #A33D00,A100:white,A200: white,
+  A400:white, A700:white,
   contrast: (
   50: $dark-primary-text,100: $dark-primary-text,200: $dark-primary-text,
   300: $dark-primary-text,400: $dark-primary-text,500: $light-primary-text,
@@ -18,14 +15,12 @@ $mat-orangeC: (
   900: $light-primary-text,A100: $dark-primary-text,A200: $light-primary-text,
   A400: $light-primary-text,A700: $light-primary-text,)
 );
-
-
 $mat-greenC: (
   50:  #CCF9F7,100: #94E9E6,200: #74c7c5,
   300: #66D5D1,400: #41BCB7,500: #1bb6b2,
   600: #1BB6B0,700: #006c69,800: #005f5c,
-  900: #004E4B,A100:white,A200: yellow,
-  A400:black, A700:purple,
+  900: #004E4B,A100:white,A200: white,
+  A400:white, A700:white,
   contrast: (
   50: $dark-primary-text,100: $dark-primary-text,200: $dark-primary-text,
   300: $dark-primary-text,400: $dark-primary-text,500: $light-primary-text,
@@ -33,14 +28,12 @@ $mat-greenC: (
   900: $light-primary-text,A100: $dark-primary-text,A200: $light-primary-text,
   A400: $light-primary-text,A700: $light-primary-text,)
 );
-
-
   $mat-redC: (
   50:  #FFB2B2,100: #FF8E8E,200: #FF8787,
   300: #FF6363,400: rgb(252, 70, 70),500: #FF4040,
   600: #B80505,700: #C11A1A,800: #B80505,
-  900: #960000,A100:white,A200: yellow,
-  A400:black, A700:purple,
+  900: #960000,A100:white,A200: white,
+  A400:white, A700:white,
   contrast: (
   50: $dark-primary-text,100: $dark-primary-text,200: $dark-primary-text,
   300: $dark-primary-text,400: $dark-primary-text,500: $light-primary-text,
@@ -49,25 +42,20 @@ $mat-greenC: (
   A400: $light-primary-text,A700: $light-primary-text,)
 );
 
-
 @include mat-core();
-
 $UxIO-primary: mat-palette($mat-orangeC);
 $UxIO-accent: mat-palette($mat-greenC);
 $UxIO-warn: mat-palette($mat-redC);
 $UxIO-theme: mat-light-theme($UxIO-primary, $UxIO-accent, $UxIO-warn);
-
-
-
-
 @include angular-material-theme($UxIO-theme);
 
+
 $mat-datepicker: (
-  50:  red,100: rgb(116,199,197),200: #74c7c5,
-  300: #66D5D1,400: #41BCB7,500: white,
-  600: #1BB6B0,700: #006c69,800: #005f5c,
-  900: #004E4B,A100:black,A200: yellow,
-  A400:black, A700:purple,
+  50:  white,100: rgb(116,199,197),200: white,
+  300: white,400: white,500: white,
+  600: white,700: white,800: white,
+  900: white,A100:white,A200: white,
+  A400:white, A700:white,
   contrast: (
   50: $dark-primary-text,100: $dark-primary-text,200: $dark-primary-text,
   300: $dark-primary-text,400: $dark-primary-text,500: $light-primary-text,
@@ -75,17 +63,56 @@ $mat-datepicker: (
   900: $light-primary-text,A100: $dark-primary-text,A200: $light-primary-text,
   A400: $light-primary-text,A700: $light-primary-text,)
 );
+  $datepicker-theme-primary: mat-palette($mat-datepicker);
+  $datepicker-theme-accent:  mat-palette($mat-datepicker);
+  $datepicker-theme-warn:  mat-palette($mat-datepicker); 
+  $datepicker-theme: mat-light-theme($datepicker-theme-primary, $datepicker-theme-accent,$datepicker-theme-warn);
+  //Saturn datePicker  theme
+  @include sat-datepicker-theme($datepicker-theme);
 
 
 
-//tema secundário * 
-  $secundary-theme-primary: mat-palette($mat-datepicker);
-  $secundary-theme-accent:  mat-palette($mat-orangeC);
-  $secundary-theme-warn:  mat-palette($mat-redC);
-  $secundary-theme: mat-light-theme($secundary-theme-primary, $secundary-theme-accent,$secundary-theme-warn);
 
 
 
+  $mat-disableGray: (
+    50:  #f1f1f1,100: #f2f2f2,200: #f3f3f3,
+    300: #f4f4f4,400: #dcdcdc,500: #dcdcdd,
+    600: #ADAEB6,700: #ADAEC8,800: #AFAEC8,
+    900: #54565a,A100:white,A200: white,
+    A400:white, A700:white,
+    contrast: (
+    50: $dark-primary-text,100: $dark-primary-text,200: $dark-primary-text,
+    300: $dark-primary-text,400: $dark-primary-text,500: $light-primary-text,
+    600: $light-primary-text,700: $light-primary-text, 800: $light-primary-text,
+    900: $light-primary-text,A100: $dark-primary-text,A200: $light-primary-text,
+    A400: $light-primary-text,A700: $light-primary-text,)
+  );
 
-//Saturn datePicker  theme
-@include sat-datepicker-theme($secundary-theme);
+
+  $mat-disableRed: (
+    50:  #ff404096,100: #ff404057,200: #ff404052,
+    300: #ff4040a8,400: #ff4040b2,500: #ff4040,
+    600: #ba0c2f,700: #ba0c2f69,800: #ba0c2fb7,
+    900: #ba0c2f,A100:white,A200: white,
+    A400:white, A700:white,
+    contrast: (
+    50: $dark-primary-text,100: $dark-primary-text,200: $dark-primary-text,
+    300: $dark-primary-text,400: $dark-primary-text,500: $light-primary-text,
+    600: $light-primary-text,700: $light-primary-text, 800: $light-primary-text,
+    900: $light-primary-text,A100: $dark-primary-text,A200: $light-primary-text,
+    A400: $light-primary-text,A700: $light-primary-text,)
+  );
+
+
+  #disable-theme{ 
+    $disable-primary: mat-palette($mat-disableGray);
+    $disable-accent: mat-palette($mat-disableRed);
+    $disable-warn: mat-palette($mat-disableGray);
+    $disable-theme: mat-light-theme($disable-primary, $disable-accent, $disable-warn);
+    @include angular-material-theme($disable-theme);
+    display: flex;
+  }
+  
+ 
+  
