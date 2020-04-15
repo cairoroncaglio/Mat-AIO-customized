@@ -28,6 +28,10 @@ import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeDeAt from '@angular/common/locales/de-at';
 import { CardPlusComponent } from './componentsMatAIO/card-plus/card-plus.component';
+import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
+import en from '@angular/common/locales/en';
+import { IconDefinition } from '@ant-design/icons-angular';
+import * as AllIcons from '@ant-design/icons-angular/icons';
 
 registerLocaleData(localeDeAt);
 
@@ -62,14 +66,17 @@ export interface SatDatepickerRangeValue<D> {
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    SatDatepickerModule
+    SatDatepickerModule,
+    NgZorroAntdModule
   ],
   providers: [
     {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' }},
     {provide: STEPPER_GLOBAL_OPTIONS,useValue: { displayDefaultIndicatorType: false }},
     {provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE]},
     {provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS},
-    { provide: LOCALE_ID, useValue: "en-US" }
+    { provide: LOCALE_ID, useValue: "pt-BR" },
+    { provide: NZ_I18N, useValue: en_US }, { provide: NZ_I18N, useValue: en_US },
+     
   ],
   bootstrap: [AppComponent]
 })

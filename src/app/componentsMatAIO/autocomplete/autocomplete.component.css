@@ -91,7 +91,13 @@
 
 
 
-
+.nzorro{
+  display: flexbox;
+}
+.nz-avatar {
+  margin-top: 16px;
+  margin-right: 16px;
+}
 
 
   #ninjas ::ng-deep .mat-form-field-flex > .mat-form-field-infix {

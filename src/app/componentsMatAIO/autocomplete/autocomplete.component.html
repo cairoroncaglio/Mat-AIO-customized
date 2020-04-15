@@ -47,7 +47,7 @@
                         <mat-autocomplete #autoGroup="matAutocomplete">
                             <mat-optgroup *ngFor="let group of peopleGroupOptions | async" [label]="group.letter">
                                 <mat-option *ngFor="let name of group.names" [value]="name">
-                                    {{name}}
+                                    {{name}} 
                                 </mat-option>
                             </mat-optgroup>
                         </mat-autocomplete>
@@ -64,8 +64,8 @@
                                 [formControl]="peopleCtrl">
                             <mat-autocomplete #auto="matAutocomplete">
                                 <mat-option *ngFor="let people of filteredPeople | async" [value]="people.name">
-                                    <ng-template>{{people.name.chartAt(2)}}</ng-template>
-                                    <span>{{people.name}}</span>
+                                   
+                                    <span>{{people.name}</span>
                                 </mat-option>
                             </mat-autocomplete>
                         </mat-form-field>
@@ -77,16 +77,6 @@
 
 
 
-            <div class="content">
-                <div class="autocomplete">
-                    <mat-list>
-                        <mat-list-item *ngFor="let people of filteredPeople ">
-                          <ng-template>{{people.name.chartAt(0)}}</ng-template>
-                          <h3 matLine> {{people.name }} </h3>
-                          <mat-divider></mat-divider>
-                        </mat-list-item>
-                      </mat-list>
-                </div>
-            </div>
+           
 
     </div>
