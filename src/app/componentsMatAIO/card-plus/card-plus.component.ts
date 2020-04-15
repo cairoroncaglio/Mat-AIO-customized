@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-plus.component.css']
 })
 export class CardPlusComponent implements OnInit {
-details=true;
-basic=false;
+details=false;
+basic=true;
   constructor() { }
 
   ngOnInit(): void {

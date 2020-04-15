@@ -69,6 +69,13 @@
   border: solid 0px rgba(0, 0, 0, 0);
   cursor: pointer;
 }
+.arrow-28px-orange{
+  font-size: 30px;
+  color: #ff6a13; 
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 0px rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
 
 .details-button{
   position: absolute;

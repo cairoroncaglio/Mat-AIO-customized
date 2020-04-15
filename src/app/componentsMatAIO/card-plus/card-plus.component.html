@@ -18,8 +18,11 @@
             <mat-card-title class="lbl-title">Status atual :</mat-card-title>
             <mat-card-subtitle class="lbl-subtitle" style="text-decoration: none!important;">Não preenchido</mat-card-subtitle>
           </div>
-          <div class="details-button">
-            <button class="material-icons arrow-28px" (click)="openDetails()">keyboard_arrow_down</button>
+          <div class="details-button"(click)="openDetails()"*ngIf="basic">
+            <button class="material-icons arrow-28px">keyboard_arrow_down</button>
+          </div>
+          <div class="details-button"*ngIf="details" (click)="openDetails()">
+            <button class="material-icons arrow-28px-orange">keyboard_arrow_up</button>
           </div>
         </div>
       </mat-card-header>
