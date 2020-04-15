@@ -1,16 +1,14 @@
-<div class="container">
+<div class="container" (click)="getMes()">
   <div class="content">
 
-    <!-- <div class="date-picker">
-      <mat-form-field color="accent">
-        <input matInput placeholder="Choose a date" [satDatepicker]="picker" [value]="date" >
-        <sat-datepicker #picker [rangeMode]="true"></sat-datepicker>
-        <sat-datepicker-toggle matSuffix [for]="picker"></sat-datepicker-toggle>
-      </mat-form-field>
-    </div>
-  </div> -->
+
 
     <div class="datepicker">
+
+      <div class="Mount-Year">
+        <label class="lbl-month">{{monthLabel}}</label>
+        <label class="lbl-year">{{year}}</label>
+      </div>
       <div class="th-datepicker">
         <div class="tr-head" id="alphaTr">
           <label class="lbl-tr">DOM</label>
@@ -36,7 +34,9 @@
       </div>
       <sat-calendar [rangeMode]="true" (dateRangesChange)="inlineRangeChange($event)">
       </sat-calendar>
+      <div class="NullPointerException">
+      </div>
     </div>
   </div>
-  
+
 </div>

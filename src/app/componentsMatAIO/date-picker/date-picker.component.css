@@ -3,61 +3,53 @@ mat-form-field {
   }
 
   .container{
-    width: 100vw;
-    height: 70vh;
-    
+    width: auto;
+    height: 90vh;
+    background-color: white;
     display: flex;
   }
   .content{
+    position: relative;
+    top: -70px;
+    left: -200px;
     margin: auto;
-    width: 800px;
-    height: 500px;
+    width: auto;
+    height: auto;
     background-color: white;
     display: flex;
   }
 
-  sat-calendar{
-    margin: auto;
-    width: 400px;
-    height: 500px;
-  }
- 
-.content ::ng-deep .mat-calendar-body-selected {
+ ::ng-deep .mat-calendar-body-selected {
   color: #54565abd;
 }
-.content ::ng-deep .mat-calendar-body-semi-selected{
+ ::ng-deep .mat-calendar-body-semi-selected{
   color: white!important;
 }
-
-
-.content ::ng-deep .mat-calendar-body-cell-content, ::ng-deep.mat-calendar-body-label, ::ng-deep .mat-calendar-body-cell{
-  padding-top: 4%!important;
-  padding-bottom: 4% !important;
-  font-family: "Moderat-Regular", sans-serif !important;
-  color:#54565a;
-  font-size: 14pt;
-  
+ ::ng-deep .mat-calendar-table-header-divider{
+  visibility: hidden!important; 
 }
-
-.content ::ng-deep .mat-calendar-table-header-divider{
-   visibility: hidden!important; 
-}
-
-.content ::ng-deep .mat-calendar-body-today:not(.mat-calendar-body-selected) {
+ ::ng-deep .mat-calendar-body-today:not(.mat-calendar-body-selected) {
   border-color: rgba(116, 199, 198, 0.226)!important;
   border-radius: 32px!important;
   height: 100%!important;
 }   
 
+ ::ng-deep .mat-calendar-body-cell-content, ::ng-deep.mat-calendar-body-label, ::ng-deep .mat-calendar-body-cell{
+  padding-top: 4%!important;
+  padding-bottom: 4% !important;
+  font-family: "Moderat-Regular", sans-serif !important;
+  color:#54565a;
+  font-size: 10pt;
+}
+
 .content ::ng-deep .mat-calendar-body-selected{
-  
   width: 90%!important; 
-  height: 140%!important;
+  height: 130%!important;
   margin-left: 0px!important;
-  margin-top: -8px;
+  margin-top: -5px;
   border: solid 2px rgba(116, 199, 198, 0.911)!important;
-  font-size: 13pt!important;
-  color:rgba(116, 199, 198, 0.911);
+  font-size: 12pt!important;
+  color:#54545a;
   font-family: "Moderat-Regular", sans-serif !important;
   box-shadow:0px 0px  1px 1px rgb(116,199,197);
   
@@ -65,24 +57,24 @@ mat-form-field {
 .content ::ng-deep .mat-calendar-body-label{
   color:#54565a!important;
   visibility: hidden!important;
-  font-size: 9pt!important;
   font-family: "AB InBev Headlines", sans-serif!important;
 }
 
 .content ::ng-deep  .mat-button{
-  width: 200px!important;
+  width: 0px!important;
   background-color: white!important;
   text-align: left!important;
-  color:rgba(0, 0, 0, 0.849)!important;
-  font-size: 16pt;
+  color:rgba(0, 0, 0, 0)!important;
+  font-size: 1pt;
   font-family: "AB InBev Headlines", sans-serif!important;
-}
-.content ::ng-deep th{
-  color:#54565a!important;
-  font-size: 14pt!important;
-  font-family: "AB InBev Headlines", sans-serif!important;
+  cursor: unset!important;
 }
   
+.content ::ng-deep .mat-calendar-table tr:nth-child(1) td:nth-child(7){
+    
+  border-top-right-radius: 50px!important;
+  border-bottom-right-radius: 50px!important;
+}
 .content ::ng-deep .mat-calendar-table tr:nth-child(2) td:nth-child(7){
     
     border-top-right-radius: 50px!important;
@@ -127,13 +119,6 @@ mat-form-field {
     height: 5px!important;
   }
 
-  ::ng-deep .mat-cell{
-    padding: 800rem !important;
-  }
- 
-::ng-deep .mat-header-row, .mat-row {
-  display: flex;
-} 
 ::ng-deep .mat-calendar-table {
   border-collapse: initial!important;
   border-spacing: 0px 15px !important;
@@ -145,45 +130,86 @@ mat-form-field {
 ::ng-deep .mat-calendar-table-header{
   visibility: hidden!important;
 }
-::ng-deep tr{
+
+
+
+#alphaTr{
+  margin-left: 9px;
+}
+
+::ng-deep .mat-calendar-table{
   width: 100%!important;
-  
+  height: 100%!important;
 }
 
 .datepicker{
   display: flexbox;
-  width: 500px;
+  width: 300px;
   height: 450px;
   
 }
+
+
 .datepicker .th-datepicker{
   display: flex;
   height: 40px;
   width: 100%;
   position: relative;
-  top: 173px;
+  top: 163px;
 }
- .tr-head{
-  width: 53px;
+
+
+.tr-head{
+  margin-left: 1.2px;
+}
+
+.lbl-tr{
+  font-size: 12pt;
+  font-weight: 700;
+  font-family: "Moderat", sans-serif !important;
+  
+  text-align: center;
+  color:#54565a81;
+}
+
+.tr-head{
+  width: 40px;
   height: 100%;
   text-align: center;
   display: flexbox;
 }
-#alphaTr{
-  margin-left: 59px;
+.datepicker .Mount-Year{
+  display: flex;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  top: 177px;
 }
-.lbl-tr{
-  font-size: 14pt;
-  font-weight: 700;
+
+.datepicker .Mount-Year .lbl-month{
+  font-size: 16pt;
+  font-weight: 500;
   font-family: "Moderat", sans-serif !important;
-  margin-top: 5px;
   text-align: center;
-  color:#54565a81;
+  color:#54565a;
 }
-::ng-deep .mat-calendar-table{
-  width: 100%!important;
-  height: 100%!important;
+.datepicker .Mount-Year .lbl-year{
+  font-size: 14pt;
+  font-weight: 500;
+  font-family: "Moderat-Regular", sans-serif !important;
+  text-align: center;
+  color:#54565a91;
+  margin-left: 5px;
+  margin-top: 2px;
 }
-.tr-head{
-  margin-left: 1.9px;
+::ng-deep .mat-calendar-controls .mat-calendar-period-button   {
+  color: white!important;
+}
+.NullPointerException{
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  position: relative;
+  top: -350px;
+  left: 20px;
 }
