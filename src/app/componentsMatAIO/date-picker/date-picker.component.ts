@@ -16,7 +16,7 @@ export class DatePickerComponent implements OnInit {
  month='';
  year='';
  monthLabel='';
- janeiro;
+ 
 
 
   inlineRange;
@@ -33,13 +33,9 @@ export class DatePickerComponent implements OnInit {
   getMes() {
     console.log((<HTMLSelectElement>document.querySelectorAll('span.mat-button-wrapper')[9]));
     this.yearAndMonthOfMatButtonWrapperDatePicke=[(<HTMLSelectElement>document.querySelectorAll('span.mat-button-wrapper')[9]).innerText];
-    
     this.month=this.yearAndMonthOfMatButtonWrapperDatePicke[0].substring(0,3);
-    
     this.year=this.yearAndMonthOfMatButtonWrapperDatePicke[0].substring(4,8);
-   
-    
-    this.convertMonth();
+   this.convertMonth();
     
   }
 

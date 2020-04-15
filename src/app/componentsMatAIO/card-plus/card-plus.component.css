@@ -1,86 +1,159 @@
 
-  ::ng-deep .mat-form-field-flex > .mat-form-field-infix {
-    padding: 0.6em 0px !important; 
- }
-   ::ng-deep .mat-form-field-appearance-outline {
-    width: 300px;
-    height: 40px;
-  }
-    ::ng-deep .mat-select-panel-wrap{
-    margin-left: -2.5px;
-    margin-top: 40px;
-  }
-    ::ng-deep .mat-form-field-appearance-outline .mat-select-arrow {
-    visibility: hidden;
-  }
-    ::ng-deep .mat-form-field-appearance-outline .mat-select-trigger {
-   margin-left: 32px;
-   position: relative;
-   max-width: 232px!important;
-  }
+.example-card {
+  max-width: 1000px;
+  height: auto;
+  min-height: 130px;
+  padding-top:32px ;
+  padding-bottom: 32px;
+  
+}
 
-    ::ng-deep .mat-form-field-appearance-outline.mat-select-panel {
-    max-height: 200px !important;  
-  }
+.header{
+  width: 90%;
+  display: flex;
+  height: 64px;
+}
+.avatar{
+  
+}
+.header .avatar {
+  background-image: url('https://abrilexame.files.wordpress.com/2018/10/8dicas8.jpg?quality=70&strip=info&w=1000&h=1000.jpg');
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  margin-left: -20px;
 
-    ::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
-    color: #54565a;
-    font-weight: 500;
-  }
-    ::ng-deep .mat-select .ng-tns-c212-5 .ng-tns-c74-4 .ng-valid .ng-star-inserted .ng-dirty .mat-select-empty .ng-touched{
-    color:#ADAEB6!important;
-  }
-    ::ng-deep .mat-select-placeholder {
-    font-family: "ABInBevHeadlines", sans-serif !important;
-  }
-   ::ng-deep .ng-star-inserted{
-    padding-left: 2px!important;
-    padding-bottom: 4px;
-    font-size: 11pt;
-    color:#ADAEB6;
-    
-  }
-    ::ng-deep .ng-tns-c212-5 .ng-star-inserted{
-    color: #54565adc;
-    font-weight: 600;
-    font-size: 11pt;
-    font-family: "Moderat-Regular", sans-serif !important;
-  }
-   ::ng-deep .mat-option-text{
-    color:#ADAEB6;
-    font-weight: 300;
-    font-family: "Moderat-Regular", sans-serif !important;
-    
-  }
-    ::ng-deep .mat-selected .mat-option-text{
-    color: #54565ad8!important;
-    font-weight: 600;
-    font-size: 11pt;
-    font-family: "Moderat-Regular", sans-serif !important;
-    
-  }
-    ::ng-deep .mat-pseudo-checkbox .mat-option-pseudo-checkbox .ng-star-inserted .mat-pseudo-checkbox-checked{
-    background-color: #54565a96;
-  }
-     ::ng-deep .mat-pseudo-checkbox.mat-pseudo-checkbox-checked {     
-    background-color: #54565a96;
-    
-   }
-    ::ng-deep .mat-select-placeholder {
-     margin-left: 53px!important;
-   }
- 
-.arrow-box{
-    width: 45px;
-    height: 40.5px;
-    border-left: solid 1px rgba(0, 0, 0, 0.11);
-    margin-top: 3.5px;
-    margin-left: -46.5px;
-    background-color: white;
- }
- .arrow-box .material-icons.arrow-28px { 
-     font-size: 30px; 
-     color: #54565a63;
-     margin-left: 6px;
-     margin-top: 7px;
+}
+.header .persona-head-main{
+  width: 48%;
+  padding-left: 3%;
+  padding-right: 7%;
+}
+.lbl-name{
+  margin-top: 5px;
+  font-family: "Moderat", sans-serif !important;
+  font-size:16px;
+  font-weight: 700;
+  color:#54565a;
+}
+.lbl-cargo{
+  font-family: "Moderat-Regular", sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  color:#adaeb6;
+}
+
+.header .persona-head-1{
+  width: 36%;
+}
+.header .persona-head-2{
+  width: 24%;
+}
+.lbl-title{
+  font-family: "Moderat-Regular", sans-serif !important;
+  font-size: 15px;
+  font-weight: 700;
+  color:#adaeb6;
+}
+.lbl-subtitle{
+  font-family: "Moderat", sans-serif !important;
+  color:#adaeb6cb;
+  font-size: 16px;
+  font-weight:400;
+  text-decoration: underline;
+}
+.arrow-28px{
+  font-size: 30px;
+  color: #54565a; 
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 0px rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.details-button{
+  position: absolute;
+  top: 20px;
+  left:900px!important;
+}
+.box-buttons{
+  display: flex;
+  width: auto;
+  
+  margin-bottom: 24px;
+}
+
+  
+
+.box-buttons .empty-buttons{
+  width: 48%;
+  background-color: white;
+  height: 100%;
+}
+.box-buttons .buttons{
+  width: 62%;
+  background-color: white;
+  height: 100%;
+}
+ #btnMedio{
+  height: 40px;
+  width: 122px;
+  font-family: "Moderat-Regular", sans-serif !important;
+  font-weight: 700;
+  font-size: 14px;
+
+}
+
+.box-buttons .buttons .btnEditar{
+  border: solid 1px #ff6a13;
+}
+.card-content{
+  margin-top: 60px!important;
+  display: flex;
+}
+.card-content .persona-details-skill-1{
+  width: 16%;
+  margin-left: 9%;
+  display: flexbox;
+}
+
+.lbl-title-skills{
+  font-family: "AB InBev Headlines", sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  color:#adaeb6;
+}
+.lbl-skills{
+  font-family: "Moderat", sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  color:#adaeb6c7;
+  padding-top: -8px!important;
+}
+.card-content .persona-details-skill-2{
+  width: 24%;
+}
+.card-content .persona-details-revesa{
+  width: 24%;
+}
+
+.card-content .persona-details-status{
+  width: 24%;
+}
+.lbl-title-revesa{
+  font-family: "AB InBev Headlines", sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  color:#adaeb6;
+}
+.lbl-revesa{
+  font-family: "Moderat", sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  color:#adaeb6c7;
+  padding-top: -8px!important;
+}
+.box-buttons{
+  width: 100%;
+  background-color: red;
+  height: 64px;
 }

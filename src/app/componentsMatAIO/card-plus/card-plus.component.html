@@ -1,1 +1,73 @@
-<p>card-plus works!</p>
+<div class="main" style="background-color: white; height: 80vh; width: 100vw; display: flex;">
+  <div style="margin: auto; display: flexbox; width: 1000px; position: fixed; top:300px; left:250px;" >
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div class="header">
+          <div mat-card-avatar class="avatar"></div>
+          <div class="persona-head-main">
+            <mat-card-title class="lbl-name">Aline Pereira Silva</mat-card-title>
+            <mat-card-subtitle class="lbl-cargo">Operador de Lavadora</mat-card-subtitle>
+          </div>
+
+          <div class="persona-head-1" *ngIf="basic">
+            <mat-card-title class="lbl-title">Revesa com:</mat-card-title>
+            <mat-card-subtitle class="lbl-subtitle">João Luis Antunes</mat-card-subtitle>
+            <mat-card-subtitle class="lbl-subtitle">Gabriela Pontes</mat-card-subtitle>
+          </div>
+          <div class="persona-head-2" *ngIf="basic">
+            <mat-card-title class="lbl-title">Status atual :</mat-card-title>
+            <mat-card-subtitle class="lbl-subtitle" style="text-decoration: none!important;">Não preenchido</mat-card-subtitle>
+          </div>
+          <div class="details-button">
+            <button class="material-icons arrow-28px" (click)="openDetails()">keyboard_arrow_down</button>
+          </div>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="card-content" *ngIf="details">
+          <div class="persona-details-skill-1">
+            <mat-card-title class="lbl-title-skills">Opera:</mat-card-title>
+            <div><label class="lbl-skills">Lavadora</label></div>
+            <div><label class="lbl-skills">Enchedora</label></div>
+            <div><label class="lbl-skills">Paletizadora</label></div>
+            <div><label class="lbl-skills">Rotuladora</label></div>
+            <div><label class="lbl-skills">PZ</label></div>
+            <div><label class="lbl-skills">Inspetor</label></div>
+          </div>
+
+          <div class="persona-details-skill-2">
+            <mat-card-title class="lbl-title-skills">Conserta:</mat-card-title>
+            <div><label class="lbl-skills">Lavadora</label></div>
+            <div><label class="lbl-skills">Enchedora</label></div>
+            <div><label class="lbl-skills">Paletizadora</label></div>
+            <div><label class="lbl-skills">Rotuladora</label></div>
+            <div><label class="lbl-skills">PZ</label></div>
+            <div><label class="lbl-skills">Inspetor</label></div>
+          </div>
+          <div class="persona-details-revesa">
+            <mat-card-title class="lbl-title-revesa">Revesa com:</mat-card-title>
+            <div><label class="lbl-revesa">Gabriela Pontes</label></div>
+            <div><label class="lbl-revesa">João Luis Antunes</label></div>
+          </div>
+          <div class="persona-details-status">
+            <mat-card-title class="lbl-title-skills">Status atual:</mat-card-title>
+            <mat-card-subtitle class="lbl-skills">Aguardando aprovação</mat-card-subtitle>
+          </div>
+
+
+        </div>
+        <div class="box-buttons" *ngIf="details">
+          <div class="empty-buttons">
+          </div>
+          <div class="buttons">
+            <button mat-stroked-button color="primary" class="btnEditar" id="btnMedio"
+              style="margin-left: 160px; margin-top: 16px;">Editar</button>
+            <button mat-raised-button color="primary" class="btnAprovar" id="btnMedio"
+              style="margin-left: 24px; margin-top: 16px;">Aprovar</button>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+</div>

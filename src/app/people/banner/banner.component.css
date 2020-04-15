@@ -18,13 +18,10 @@
 .banner .container .vertical-flex .box-return{
     display: flex;
     margin-left: -680px;
-    
 }
 .banner .container .vertical-flex .box-title{
     display: flexbox;
     margin-left: 230px;
-    
-    
 }
 .banner .container .vertical-flex .box-title .title{
     font-size: 32px;
