@@ -32,6 +32,8 @@ import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import en from '@angular/common/locales/en';
 import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons';
+import { DataGridComponent } from './componentsMatAIO/data-grid/data-grid.component';
+
 
 registerLocaleData(localeDeAt);
 
@@ -55,7 +57,9 @@ export interface SatDatepickerRangeValue<D> {
     AutocompleteComponent,
     RascunhoComponent,
     DatePickerComponent,
-    CardPlusComponent
+    CardPlusComponent,
+    DataGridComponent,
+    
   ],
   imports: [
     AppRoutingModule,
@@ -74,8 +78,8 @@ export interface SatDatepickerRangeValue<D> {
     {provide: STEPPER_GLOBAL_OPTIONS,useValue: { displayDefaultIndicatorType: false }},
     {provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE]},
     {provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS},
-    { provide: LOCALE_ID, useValue: "pt-BR" },
-    { provide: NZ_I18N, useValue: en_US }, { provide: NZ_I18N, useValue: en_US },
+    {provide: LOCALE_ID, useValue: "pt-BR" },
+    
      
   ],
   bootstrap: [AppComponent]

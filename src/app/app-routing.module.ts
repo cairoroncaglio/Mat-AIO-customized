@@ -13,6 +13,7 @@ import { HeaderComponent } from './people/header/header.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CheckboxComponent } from './componentsMatAIO/checkbox/checkbox.component';
+import { DataGridComponent } from './componentsMatAIO/data-grid/data-grid.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'rascunho', component: RascunhoComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'date-picker', component: DatePickerComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'card', component: CardPlusComponent}]}]},
+  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'data-grid', component: DataGridComponent}]}]},
 ];
 
 @NgModule({

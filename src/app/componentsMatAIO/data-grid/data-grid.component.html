@@ -1,0 +1,75 @@
+<div class="container" (click)="getLabelpaginator()">
+    <div class="content">
+        <div class="div-search">
+            <div style="display: flex; width: 60%;"></div>
+            <mat-form-field appearance="outline" class="filter">
+                 <mat-label><i class="material-icons search">search</i> <label class="lbl-Search">Pesquisa rápida </label></mat-label> 
+                <input matInput (keyup)="applyFilter($event)" id="input" placeholder="Ex:. Funcionário, Setor, Turno ...">
+            </mat-form-field>
+        </div>
+        <div class="main-table">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="matricula">
+                    <th mat-header-cell *matHeaderCellDef> Matrícula </th>
+                    <td mat-cell *matCellDef="let element"> {{element.matricula}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="nome">
+                    <th mat-header-cell *matHeaderCellDef> Nome </th>
+                    <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="cargo">
+                    <th mat-header-cell *matHeaderCellDef> Cargo </th>
+                    <td mat-cell *matCellDef="let element"> {{element.cargo}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="funcao">
+                    <th mat-header-cell *matHeaderCellDef> Setor </th>
+                    <td mat-cell *matCellDef="let element"> {{element.funcao}} </td>
+                </ng-container>
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="turno">
+                    <th mat-header-cell *matHeaderCellDef id="headerTurno"> Turno </th>
+                    <td mat-cell *matCellDef="let element"> {{element.turno}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="setor">
+                    <th mat-header-cell *matHeaderCellDef> Setor </th>
+                    <td mat-cell *matCellDef="let element"> {{element.linha}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="view">
+                    <th mat-header-cell *matHeaderCellDef> <button mat-button id="btnHeadView"><i
+                                class="material-icons arrow-28px-orange">visibility</i></button> </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-stroked-button color="accent" class="btnEditar" id="btnMedio">
+                            <i
+                                class="material-icons arrow-28px-orange">visibility</i>
+                            </button>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="edit">
+                    <th mat-header-cell *matHeaderCellDef> <button mat-button id="btnHeadView">Editar</button> </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-raised-button color="primary" class="btnEditar" id="btnMedio">Editar</button>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+        <div class="paginator">
+            <div class="labelPaginator"><label class="lbl-pagina">{{labelOfPaginator}}</label></div>
+            <div class="labelShowPaginator"><label class="lbl-itens-pagina">Itens por página :</label></div>
+            <mat-paginator [pageSizeOptions]="[10, 15, 30,50]" showFirstLastButtons class="divPaginator">
+            </mat-paginator>
+
+        </div>
+    </div>
+</div>

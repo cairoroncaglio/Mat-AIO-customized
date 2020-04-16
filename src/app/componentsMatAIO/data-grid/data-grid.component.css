@@ -1,0 +1,185 @@
+
+  .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(249,249,249);
+}
+.container .content{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+
+/* Data Grid----------------------------------- */
+.container .content .main-table{
+      height: auto;
+      width: auto;
+      margin-top: -1%;
+  }
+ 
+  table {
+    width: 100%;
+    font-family: "Moderat", sans-serif !important;
+    max-width: 100%; 
+  }
+  ::ng-deep .mat-row  {
+      background-color: #dcdcdc00;
+      height: 60px!important;
+  }
+
+  ::ng-deep .mat-column-matricula{
+    color:#adaeb6;
+    font-size: 14px;
+    width:8%!important;
+    padding-left: 8px!important;
+    background-color: rgb(249,249,249);
+    border-radius: 4px;
+    
+  }
+  ::ng-deep .mat-column-nome{
+    color:#adaeb6;
+    font-size: 14px;
+    width:24%!important; 
+    padding-left: 8px!important;
+}
+  ::ng-deep .mat-column-cargo  {
+    color:#adaeb6;
+    font-size: 14px;
+    width:16%!important; 
+    padding-left: 8px!important;
+    background-color: rgba(249, 249, 249, 0.185);
+    border-radius: 4px
+  }
+  ::ng-deep .mat-column-funcao  {
+    color:#adaeb6;
+    font-size: 14px;
+    width:12%!important; 
+    padding-left: 8px!important;
+  }
+     ::ng-deep  .mat-column-turno{
+    color:#54565a91;
+    font-size: 14px;
+    font-weight: 700;
+    width:8%!important; 
+    padding-left: 0.5%!important;
+    background-color: rgba(249, 249, 249, 0.212);
+    border-radius: 4px;
+    text-align: center;
+  }
+  ::ng-deep .mat-column-setor{
+    color:#adaeb6;
+    font-size: 14px;    
+    width:16%!important; 
+    padding-left: 8px!important;
+  }
+  ::ng-deep .mat-column-view{
+    color:#adaeb6;
+    font-size: 14px;
+    width:8%!important; 
+    padding-left: 2%!important;
+  }
+  ::ng-deep .mat-column-edit{
+    color:#adaeb6;
+    font-size: 14px;
+    width:8%!important; 
+    padding-left: 2%!important; 
+  }
+  ::ng-deep .cdk-header-cell{
+    font-family: "Moderat-Regular", sans-serif !important;
+    color:#54565a;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  #btnHeadView{
+    color:#54565a!important;
+  }
+
+
+  /* Paginator ---------------------------------*/
+  ::ng-deep .mat-paginator-page-size-label{
+      visibility: hidden;
+  }
+  ::ng-deep .mat-form-field-wrapper .ng-tns-c74-1{
+      background-color: rgba(255, 255, 255, 0)!important; 
+  }
+  ::ng-deep .mat-form-field-underline {
+      visibility: hidden;
+  }
+  ::ng-deep .mat-select-arrow-wrapper .ng-tns-c212-2{
+    visibility: hidden;
+  }
+  ::ng-deep .ng-tns-c212-2 .ng-star-inserted{
+    font-family: "AB InBev Headlines", sans-serif !important;
+    color:#FFA36C;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 5px!important;
+    text-shadow: 2px 2px 2px 2px darkblue!important;
+    
+  }
+.paginator{
+      display: flex;
+      width: 100%;
+      background-color: white;
+  }
+.divPaginator{
+      width: 40%;  
+  }
+.labelShowPaginator{
+        width: 30%;    
+      font-family: "Moderat", sans-serif !important;
+      color:#54565a7c;
+      font-size: 12px;
+  }
+.labelPaginator{
+    width: 30%;
+    font-family: "AB InBev Headlines", sans-serif !important;
+    color:#54565a7c;
+    font-size: 14px;
+    background-color: white;
+  }
+::ng-deep .mat-paginator-range-label{
+      color:white!important;
+  }
+
+.lbl-itens-pagina{
+    position: relative;
+    left: 130%;
+    top: 33%;
+}
+.lbl-pagina{
+    position: relative;
+    left: 4%;
+    top: 33%;   
+}
+/* Filter------------------------------------- */
+
+
+.container .content .div-search{
+    background-color: white;
+    
+    display: flex;
+    background-color: white;
+   
+}
+.filter{
+    width: 30%!important;
+   margin-left: 8%!important;
+}
+ 
+
+::ng-deep .ng-tns-c74-0 .ng-star-inserted{
+    font-family: "AB InBev Headlines", sans-serif !important;  
+}
+::ng-deep .cdk-text-field-autofill-monitored{
+    font-family: "AB InBev Headlines", sans-serif !important; 
+}
+
+.lbl-Search{
+    position: relative;
+    top:-8px;
+}
+
+
