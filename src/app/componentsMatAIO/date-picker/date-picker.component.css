@@ -18,6 +18,12 @@ mat-form-field {
     background-color: white;
     display: flex;
   }
+  .card{
+    width: 500px;
+    height: 450px;
+    margin: auto;
+  }
+  .
 
  ::ng-deep .mat-calendar-body-selected {
   color: #54565abd;
@@ -124,8 +130,10 @@ mat-form-field {
   border-spacing: 0px 15px !important;
   width: 300px!important;
 } 
-::ng-deep .mat-calendar {
+::ng-deep .mat-calendar-content {
   font-family: "Moderat-Regular", sans-serif !important;
+  position: relative;
+  top:-35px!important;
 }
 ::ng-deep .mat-calendar-table-header{
   visibility: hidden!important;
@@ -133,65 +141,48 @@ mat-form-field {
 
 
 
-#alphaTr{
-  margin-left: 9px;
-}
+
 
 ::ng-deep .mat-calendar-table{
   width: 100%!important;
   height: 100%!important;
 }
 
+
+
+.NullPointerException{
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  position: relative;
+  top: -350px;
+  left: 20px;
+}
+
+#alphaTr{
+  margin-left: 75px;
+}
 .datepicker{
   display: flexbox;
-  width: 300px;
-  height: 450px;
-  
-}
-
-
-.datepicker .th-datepicker{
-  display: flex;
-  height: 40px;
-  width: 100%;
-  position: relative;
-  top: 163px;
-}
-
-
-.tr-head{
-  margin-left: 1.2px;
-}
-
-.lbl-tr{
-  font-size: 12pt;
-  font-weight: 700;
-  font-family: "Moderat", sans-serif !important;
-  
-  text-align: center;
-  color:#54565a81;
-}
-
-.tr-head{
-  width: 40px;
-  height: 100%;
-  text-align: center;
-  display: flexbox;
+  width: auto;
+  height: auto;
+  margin: auto;
 }
 .datepicker .Mount-Year{
   display: flex;
   height: 40px;
-  width: 100%;
+  width: 70%;
   position: relative;
-  top: 177px;
+  top: 18px;
+  
 }
-
 .datepicker .Mount-Year .lbl-month{
-  font-size: 16pt;
+  font-size: 24px;
   font-weight: 500;
   font-family: "Moderat", sans-serif !important;
   text-align: center;
   color:#54565a;
+  margin-left: 40px;
 }
 .datepicker .Mount-Year .lbl-year{
   font-size: 14pt;
@@ -202,14 +193,45 @@ mat-form-field {
   margin-left: 5px;
   margin-top: 2px;
 }
+.datepicker .th-datepicker{
+  display: flex;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  top: 108px;
+}
+
+.datepicker .th-datepicker .tr-head{
+  width: 40px;
+  height: 100%;
+  text-align: center;
+  display: flexbox;
+  margin-left: 7px;
+}
+
+.datepicker .th-datepicker .tr-head .lbl-tr{
+  font-size: 12pt;
+  font-weight: 700;
+  font-family: "Moderat", sans-serif !important;
+  text-align: center;
+  color:#54565a81;
+}
+
+
+
 ::ng-deep .mat-calendar-controls .mat-calendar-period-button   {
   color: white!important;
+  visibility: unset;
 }
-.NullPointerException{
-  width: 100px;
-  height: 60px;
-  background-color: white;
-  position: relative;
-  top: -350px;
-  left: 20px;
+::ng-deep .mat-calendar-arrow{
+  visibility: hidden;
+}
+
+sat-calendar {
+  position: absolute;
+  top: 40px!important;
+  left: 75px;
+  height: 100%;
+  width: 70%;
+  margin: auto;
 }

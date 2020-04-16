@@ -2,11 +2,9 @@
   <div class="content">
 
 
+    <mat-card class="card">
     <div class="datepicker">
-      <div class="Mount-Year">
-        <label class="lbl-month">{{monthLabel}}</label>
-        <label class="lbl-year">{{year}}</label>
-      </div>
+     
       <div class="th-datepicker">
         <div class="tr-head" id="alphaTr">
           <label class="lbl-tr">DOM</label>
@@ -32,9 +30,12 @@
       </div>
       <sat-calendar [rangeMode]="true" (dateRangesChange)="inlineRangeChange($event)">
       </sat-calendar>
-      <div class="NullPointerException">
+      <div class="Mount-Year">
+        <label class="lbl-month">{{monthLabel}}</label>
+        <label class="lbl-year">{{year}}</label>
       </div>
     </div>
+    </mat-card>
   </div>
 
 </div>

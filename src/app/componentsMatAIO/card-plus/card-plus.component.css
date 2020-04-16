@@ -13,11 +13,9 @@
   display: flex;
   height: 64px;
 }
-.avatar{
-  
-}
+
 .header .avatar {
-  background-image: url('https://abrilexame.files.wordpress.com/2018/10/8dicas8.jpg?quality=70&strip=info&w=1000&h=1000.jpg');
+  background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQG_qm0wRHs-OQ/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=E8jYAirAGsvcXcLqya1nD2w6MxGzNKZfzzVobJaTdQ0');
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -53,7 +51,7 @@
   font-family: "Moderat-Regular", sans-serif !important;
   font-size: 15px;
   font-weight: 700;
-  color:#adaeb6;
+  color:#54565a85;
 }
 .lbl-subtitle{
   font-family: "Moderat", sans-serif !important;
@@ -124,10 +122,10 @@
 }
 
 .lbl-title-skills{
-  font-family: "AB InBev Headlines", sans-serif !important;
+  font-family: "Moderat", sans-serif !important;
   font-size: 16px;
-  font-weight: 500;
-  color:#adaeb6;
+  font-weight: 700;
+  color:#54565a85;
 }
 .lbl-skills{
   font-family: "Moderat", sans-serif !important;
@@ -147,10 +145,10 @@
   width: 24%;
 }
 .lbl-title-revesa{
-  font-family: "AB InBev Headlines", sans-serif !important;
+  font-family: "Moderat", sans-serif !important;
   font-size: 16px;
-  font-weight: 500;
-  color:#adaeb6;
+  font-weight: 700;
+  color:#54565a85;
 }
 .lbl-revesa{
   font-family: "Moderat", sans-serif !important;
