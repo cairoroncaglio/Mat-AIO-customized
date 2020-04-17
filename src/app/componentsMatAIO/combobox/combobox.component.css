@@ -45,9 +45,9 @@
   font-size: 11pt;
   font-family: "Moderat-Regular", sans-serif !important;
 }
-::ng-deep .mat-option-text{
-  color:#ADAEB6;
-  font-weight: 300;
+ ::ng-deep .mat-option-text{
+  color:#54565acb;
+  font-weight: 500;
   font-size: 11pt;
   font-family: "Moderat-Regular", sans-serif !important; 
 }
@@ -95,7 +95,7 @@
   color: #54565a;
   font-weight: 600;
   font-size: 11pt;
-  font-family: "Moderat-Regular", sans-serif !important;
+  font-family: "AB InBev Headlines", sans-serif !important;
 }
 
 #customBasic ::ng-deep .mat-select-value .ng-tns-c212-1{
@@ -506,10 +506,10 @@
 }
 
  ::ng-deep .mat-pseudo-checkbox.mat-pseudo-checkbox-checked {     
-  background-color: #54565a69;
+  background-color: #54565ab6;
  }
  ::ng-deep .ng-tns-c212-15 .ng-star-inserted{
-   color:#54565aa2!important;
+   color:#54565a!important;
  }
  
  

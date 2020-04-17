@@ -1,0 +1,15 @@
+<div class="box-select" id="customBasic">
+    <div class="center">
+      <mat-form-field appearance="outline" color="warn">
+        <mat-label>{{label}}</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let opt of options" [value]="opt.value">
+            {{opt.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="arrow-box">
+        <i class="material-icons arrow-28px">keyboard_arrow_down</i>
+      </div>
+    </div>
+  </div>

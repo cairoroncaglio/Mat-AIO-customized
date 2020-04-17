@@ -1,11 +1,12 @@
 
 .example-card {
+  position:absolute!important;
+  top: -30px!important;
   max-width: 1000px;
+  width: 1000px;
   height: auto;
   min-height: 130px;
-  padding-top:32px ;
-  padding-bottom: 32px;
-  
+  margin-top: -20px!important;
 }
 
 .header{
