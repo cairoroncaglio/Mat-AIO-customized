@@ -530,4 +530,6 @@
 }
 
 
-
+::ng-deep .mat-form-field-label .ng-tns-c74-2 {
+  visibility: hidden;
+}

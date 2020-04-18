@@ -33,7 +33,10 @@ import en from '@angular/common/locales/en';
 import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 import { DataGridComponent } from './componentsMatAIO/data-grid/data-grid.component';
-import { CustomcomboboxComponent } from './componentsMatAIO/customcombobox/customcombobox.component';
+
+import { OutputInputComboxExemploComponent } from './componentsMatAIO/output-input-combox-exemplo/output-input-combox-exemplo.component';
+import { Select300pxComponent } from './components/select300px/select300px.component';
+import { Select200pxComponent } from './components/select200px/select200px.component';
 
 
 registerLocaleData(localeDeAt);
@@ -60,7 +63,10 @@ export interface SatDatepickerRangeValue<D> {
     DatePickerComponent,
     CardPlusComponent,
     DataGridComponent,
-    CustomcomboboxComponent,
+    
+    OutputInputComboxExemploComponent,
+    Select300pxComponent,
+    Select200pxComponent,
     
   ],
   imports: [

@@ -1,4 +1,3 @@
-import { CustomcomboboxComponent } from './componentsMatAIO/customcombobox/customcombobox.component';
 import { CardPlusComponent } from './componentsMatAIO/card-plus/card-plus.component';
 import { DatePickerComponent } from './componentsMatAIO/date-picker/date-picker.component';
 import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.component';
@@ -31,7 +30,7 @@ const routes: Routes = [
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'date-picker', component: DatePickerComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'card', component: CardPlusComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'data-grid', component: DataGridComponent}]}]},
-  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'custombox', component: CustomcomboboxComponent}]}]},
+  
 ];
 
 @NgModule({

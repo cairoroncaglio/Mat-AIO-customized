@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CustomcomboboxComponent } from './customcombobox.component';
+import { Select300pxComponent } from './select300px.component';
 
-describe('CustomcomboboxComponent', () => {
-  let component: CustomcomboboxComponent;
-  let fixture: ComponentFixture<CustomcomboboxComponent>;
+describe('Select300pxComponent', () => {
+  let component: Select300pxComponent;
+  let fixture: ComponentFixture<Select300pxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomcomboboxComponent ]
+      declarations: [ Select300pxComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CustomcomboboxComponent);
+    fixture = TestBed.createComponent(Select300pxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

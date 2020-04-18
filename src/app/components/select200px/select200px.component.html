@@ -1,0 +1,21 @@
+<div class="select200px">
+    <div class="secundary-theme" id="disable-theme"  
+    (mouseover)="borderColorOnFocus=true" 
+    (mouseout)="borderColorOnFocus=false">
+      <mat-form-field appearance="standart" color="warn"(click)="arrowUp=true" color="warn" id="select300px"> 
+         <mat-select [(value)]="selectedValue" placeholder="Selecione" > 
+           <mat-option *ngFor="let opt of option" [value]="opt.viewValue" 
+          (click)="actionCombobox()"
+          (click)="arrowUp=false">
+            {{opt.viewValue}}
+          </mat-option> 
+        </mat-select> 
+      </mat-form-field>
+    </div>
+    <div class="box-arrow">
+      <i class="material-icons arrow-down" *ngIf="!arrowUp">keyboard_arrow_down</i>
+      <i class="material-icons arrow-up" *ngIf="arrowUp" >keyboard_arrow_up</i>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,100 @@
+.select300px{
+    width: 300px;
+    height: 42px;
+    background-color: white;
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .select300px   ::ng-deep .mat-form-field-flex {
+    display: inline-flex;
+    align-items: baseline;
+    box-sizing: border-box;
+    line-height: 1.125!important;
+    width: 300px!important;
+    border-radius: 4px!important;
+    border: solid 1.3px #54565a5b;
+  }
+   ::ng-deep .mat-select-arrow{
+    visibility: hidden!important;
+  }
+  
+  .select300px ::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+    padding: 0.4em 0px !important; 
+  }
+  
+   #select300px ::ng-deep .mat-select-trigger {
+    margin-left: 15.5px!important;
+    position: relative;
+    max-width: 265px!important;
+   }
+   ::ng-deep .mat-select-panel {
+    max-height: 200px !important;  
+  }
+   ::ng-deep .mat-select-panel{
+    position: relative;
+    top: 40px!important;
+  }
+   ::ng-deep .mat-option{
+    border: solid 0.5px #f2f2f2b4!important;
+    border-radius: 2px;
+  }
+  ::ng-deep .mat-select-value {
+    margin-left: 10px;
+    color:#54565a7c;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Moderat", sans-serif !important;
+  }
+  ::ng-deep span .ng-star-inserted{
+    padding-top: -20px!important;
+  }
+  
+   ::ng-deep   .ng-star-inserted .mat-option-text{
+    color: #AFAEC8;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Moderat", sans-serif !important;
+  }
+  ::ng-deep .mat-active .mat-option-text{
+    color: #54565a!important;
+    font-weight: 600!important;
+    font-size: 14px;
+    font-family: "Moderat-Regular", sans-serif !important;
+  }
+   ::ng-deep span.mat-select-placeholder{
+    color: #54565a7c!important;
+    font-weight: 600!important;
+    font-size: 14px;
+    font-family: "Moderat-Regular", sans-serif !important;
+  }
+  
+   ::ng-deep .mat-select  {
+    position: relative;
+    top:-1.5px;
+  }
+  
+  .arrow-up { 
+    font-size: 28px; 
+    color: #54565a36;
+    position: relative!important;
+    margin-top: 35%;
+    margin-left: 45%;
+  }
+  .arrow-down { 
+    font-size: 28px; 
+    color: #54565a36;
+    position: relative!important;
+    margin-top: 35%;
+    margin-left: 45%;
+  }
+  
+  .box-arrow{
+    border-left: solid 0.05vw #54565a5b;
+    width: 20px;
+    height: 41px;
+    margin-left: -50px;
+  }
+  ::ng-deep .mat-select-value-text .ng-star-inserted{
+    color:#54565a70;
+  }

@@ -77,9 +77,9 @@ $mat-datepicker: (
 
   $mat-disableGray: (
     50:  #f1f1f1,100: #f2f2f2,200: #f3f3f3,
-    300: #f4f4f4,400: #dcdcdc,500: #dcdcdd,
-    600: #ADAEB6,700: #ADAEC8,800: #AFAEC8,
-    900: #54565a,A100:white,A200: white,
+    300: #f4f4f4,400: #AFAEC8,500: #AFAEC8,
+    600: #AFAEC8,700: #AFAEC8,800: #AFAEC8,
+    900: #AFAEC8,A100:white,A200: white,
     A400:white, A700:white,
     contrast: (
     50: $dark-primary-text,100: $dark-primary-text,200: $dark-primary-text,
@@ -111,7 +111,7 @@ $mat-datepicker: (
     $disable-warn: mat-palette($mat-disableGray);
     $disable-theme: mat-light-theme($disable-primary, $disable-accent, $disable-warn);
     @include angular-material-theme($disable-theme);
-    display: flex;
+    
   }
   
  
