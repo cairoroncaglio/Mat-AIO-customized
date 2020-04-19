@@ -19,12 +19,12 @@ mat-form-field {
     display: flex;
   }
   .card{
-    width: 500px;
-    height: 450px;
+    width: 700px;
+    height: 550px;
     margin: auto;
   }
-  .
-
+  
+ 
  ::ng-deep .mat-calendar-body-selected {
   color: #54565abd;
 }
@@ -43,10 +43,14 @@ mat-form-field {
  ::ng-deep .mat-calendar-body-cell-content, ::ng-deep.mat-calendar-body-label, ::ng-deep .mat-calendar-body-cell{
   padding-top: 4%!important;
   padding-bottom: 4% !important;
-  font-family: "Moderat-Regular", sans-serif !important;
+  font-family: "AB InBev Headlines", sans-serif !important;
+  padding-left: 30px!important;
+  padding-right: 30px!important;
   color:#54565a;
-  font-size: 10pt;
+  font-size: 20px;
+  font-weight: 400;
 }
+
 
 .content ::ng-deep .mat-calendar-body-selected{
   width: 90%!important; 
@@ -76,13 +80,16 @@ mat-form-field {
   cursor: unset!important;
 }
   
-.content ::ng-deep .mat-calendar-table tr:nth-child(1) td:nth-child(7){
+.content ::ng-deep .mat-calendar-table tr:nth-child(0) td:nth-child(7){
     
   border-top-right-radius: 50px!important;
   border-bottom-right-radius: 50px!important;
 }
+.content ::ng-deep .mat-calendar-table tr:nth-child(1) td:nth-child(7){
+  border-top-right-radius: 50px!important;
+  border-bottom-right-radius: 50px!important;
+}
 .content ::ng-deep .mat-calendar-table tr:nth-child(2) td:nth-child(7){
-    
     border-top-right-radius: 50px!important;
     border-bottom-right-radius: 50px!important;
   }
@@ -94,14 +101,33 @@ mat-form-field {
     border-top-right-radius: 50px!important;
     border-bottom-right-radius: 50px!important;
   }
+  .content ::ng-deep .mat-calendar-table tr:nth-child(5) td:nth-child(7){
+    border-top-right-radius: 50px!important;
+    border-bottom-right-radius: 50px!important;
+  }
+  .content ::ng-deep .mat-calendar-table tr:nth-child(6) td:nth-child(7){
+    border-top-right-radius: 50px!important;
+    border-bottom-right-radius: 50px!important;
+  }
   .content ::ng-deep .mat-icon-button{
     color:rgb(116, 199, 198)!important;
    
+  }
+  ::ng-deep .mat-calendar-body-begin-range{
+    border-top-left-radius: 50px!important;
+    border-bottom-left-radius: 50px!important;
+  }
+  ::ng-deep .mat-calendar-body-end-range{
+    border-top-right-radius: 50px!important;
+    border-bottom-right-radius: 50px!important;
   }
   ::ng-deep .mat-calendar-table tr:nth-child(1) td:nth-child(5){
     border-top-right-radius: 50px!important;
     border-bottom-right-radius: 50px!important;
   }
+  
+
+
 
   ::ng-deep .mat-calendar-table tr:nth-child(2) td:nth-child(1){
     border-top-left-radius: 50px!important;
@@ -121,6 +147,14 @@ mat-form-field {
     border-top-left-radius: 50px!important;
     border-bottom-left-radius: 50px!important;
   }
+  ::ng-deep .mat-calendar-table tr:nth-child(6) td:nth-child(1){
+    border-top-left-radius: 50px!important;
+    border-bottom-left-radius: 50px!important;
+  }
+  ::ng-deep .mat-calendar-table tr:nth-child(7) td:nth-child(1){
+    border-top-left-radius: 50px!important;
+    border-bottom-left-radius: 50px!important;
+  }
   ::ng-deep .mat-calendar-table tr{
     height: 5px!important;
   }
@@ -134,6 +168,7 @@ mat-form-field {
   font-family: "Moderat-Regular", sans-serif !important;
   position: relative;
   top:-35px!important;
+  padding-left: 10px!important;
 }
 ::ng-deep .mat-calendar-table-header{
   visibility: hidden!important;
@@ -160,7 +195,7 @@ mat-form-field {
 }
 
 #alphaTr{
-  margin-left: 75px;
+  margin-left: 115px;
 }
 .datepicker{
   display: flexbox;
@@ -182,10 +217,10 @@ mat-form-field {
   font-family: "Moderat", sans-serif !important;
   text-align: center;
   color:#54565a;
-  margin-left: 40px;
+  margin-left: 109px;
 }
 .datepicker .Mount-Year .lbl-year{
-  font-size: 14pt;
+  font-size: 20px;
   font-weight: 500;
   font-family: "Moderat-Regular", sans-serif !important;
   text-align: center;
@@ -206,11 +241,11 @@ mat-form-field {
   height: 100%;
   text-align: center;
   display: flexbox;
-  margin-left: 7px;
+  margin-left: 27px;
 }
 
 .datepicker .th-datepicker .tr-head .lbl-tr{
-  font-size: 12pt;
+  font-size: 20px;
   font-weight: 700;
   font-family: "Moderat", sans-serif !important;
   text-align: center;
@@ -230,7 +265,7 @@ mat-form-field {
 sat-calendar {
   position: absolute;
   top: 40px!important;
-  left: 75px;
+  left: 105px;
   height: 100%;
   width: 70%;
   margin: auto;

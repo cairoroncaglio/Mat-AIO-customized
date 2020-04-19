@@ -1,12 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-
 @Component({
-  selector: 'app-rascunho',
-  templateUrl: './rascunho.component.html',
-  styleUrls: ['./rascunho.component.css']
+  selector: 'app-components-app-view',
+  templateUrl: './components-app-view.component.html',
+  styleUrls: ['./components-app-view.component.css']
 })
-export class RascunhoComponent implements OnInit {
+export class ComponentsAppViewComponent implements OnInit {
   receivedValue='';
   optionRascunho=[
   {value: '1', viewValue: 'Option 1'},
@@ -27,5 +26,4 @@ export class RascunhoComponent implements OnInit {
   onDataTransfer(valueSelect){
     this.receivedValue=valueSelect;
   }
-
 }

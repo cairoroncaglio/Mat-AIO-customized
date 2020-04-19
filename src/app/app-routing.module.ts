@@ -1,6 +1,6 @@
+import { ComponentsAppViewComponent } from './componentsMatAIO/components-app-view/components-app-view.component';
 import { CardPlusComponent } from './componentsMatAIO/card-plus/card-plus.component';
 import { DatePickerComponent } from './componentsMatAIO/date-picker/date-picker.component';
-import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.component';
 import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocomplete.component';
 import { CardComponent } from './componentsMatAIO/card/card.component';
 import { CheckBoxPlusRadioButtonComponent } from './componentsMatAIO/radio-button/check-box-plus-radio-button.component';
@@ -26,7 +26,7 @@ const routes: Routes = [
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'combo-box', component: ComboboxComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'card-model', component: CardComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'autocomplete', component: AutocompleteComponent}]}]},
-  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'rascunho', component: RascunhoComponent}]}]},
+  {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'components', component: ComponentsAppViewComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'date-picker', component: DatePickerComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'card', component: CardPlusComponent}]}]},
   {path: '', component: HeaderComponent, children: [{path: '', component: BannerComponent , children: [{path: 'data-grid', component: DataGridComponent}]}]},

@@ -1,3 +1,5 @@
+import { ComponentsAppViewComponent } from './componentsMatAIO/components-app-view/components-app-view.component';
+import { SelectWoutBorder300pxComponent } from './components/select-wout-border300px/select-wout-border300px.component';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, SatDatepickerModule } from 'saturn-datepicker'
 import { MAT_MOMENT_DATE_FORMATS, MomentDateAdapter } from '@angular/material-moment-adapter'
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,21 +24,17 @@ import { CheckBoxPlusRadioButtonComponent } from './componentsMatAIO/radio-butto
 import { CheckboxComponent } from './componentsMatAIO/checkbox/checkbox.component';
 import { CardComponent } from './componentsMatAIO/card/card.component';
 import { AutocompleteComponent } from './componentsMatAIO/autocomplete/autocomplete.component';
-import { RascunhoComponent } from './componentsMatAIO/rascunho/rascunho.component';
 import { DatePickerComponent } from './componentsMatAIO/date-picker/date-picker.component';
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeDeAt from '@angular/common/locales/de-at';
 import { CardPlusComponent } from './componentsMatAIO/card-plus/card-plus.component';
 import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
-import en from '@angular/common/locales/en';
-import { IconDefinition } from '@ant-design/icons-angular';
-import * as AllIcons from '@ant-design/icons-angular/icons';
 import { DataGridComponent } from './componentsMatAIO/data-grid/data-grid.component';
-
 import { OutputInputComboxExemploComponent } from './componentsMatAIO/output-input-combox-exemplo/output-input-combox-exemplo.component';
 import { Select300pxComponent } from './components/select300px/select300px.component';
 import { Select200pxComponent } from './components/select200px/select200px.component';
+
 
 
 registerLocaleData(localeDeAt);
@@ -59,14 +57,13 @@ export interface SatDatepickerRangeValue<D> {
     CheckboxComponent,
     CardComponent,
     AutocompleteComponent,
-    RascunhoComponent,
     DatePickerComponent,
     CardPlusComponent,
     DataGridComponent,
-    
     OutputInputComboxExemploComponent,
     Select300pxComponent,
     Select200pxComponent,
+    SelectWoutBorder300pxComponent,ComponentsAppViewComponent
     
   ],
   imports: [

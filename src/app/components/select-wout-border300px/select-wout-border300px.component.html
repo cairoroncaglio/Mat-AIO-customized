@@ -1,0 +1,22 @@
+<div class="select200pxWOB">
+    <div class="box-OrderBy"><label class="lbl-OrderBy">Ordenar por</label></div>
+    <div class="secundary-theme" id="disable-theme"  
+    (mouseover)="borderColorOnFocus=true" 
+    (mouseout)="borderColorOnFocus=false">
+    <mat-form-field appearance="standart" color="warn"(click)="arrowUp=true" color="warn" > 
+         <mat-select [(value)]="selectedValue" placeholder="Selecione" id="order-by-select-panel"> 
+           <mat-option *ngFor="let opt of option" [value]="opt.viewValue" 
+          (click)="actionCombobox()"
+          (click)="arrowUp=false" >
+            {{opt.viewValue}}
+          </mat-option> 
+        </mat-select> 
+      </mat-form-field>
+    </div>
+    <div class="box-arrow">
+      <i class="material-icons arrow-down" *ngIf="!arrowUp">keyboard_arrow_down</i>
+      <i class="material-icons arrow-up" *ngIf="arrowUp" >keyboard_arrow_up</i>
+    </div>
+  </div>
+  
+  
