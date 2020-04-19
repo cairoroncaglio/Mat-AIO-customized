@@ -1,12 +1,20 @@
 
- <p>{{receivedValue}}</p>
+ 
         
  <select300px [option]="optionRascunho" (transferredValue)="onDataTransfer($event)"></select300px>
+ <p>{{receivedValue}}</p>
  
+ <select300px [option]="optionRascunho1" (transferredValue)="onDataTransfer1($event)"></select300px>
+ <p>{{receivedValue1}}</p>
+
  <select200px [option]="optionRascunho" (transferredValue)="onDataTransfer($event)"></select200px>
+ <p>{{receivedValue}} </p>
 
- <app-select-wout-border300px [option]="optionRascunho" (transferredValue)="onDataTransfer($event)"></app-select-wout-border300px>
+ <select200px [option]="optionRascunho1" (transferredValue)="onDataTransfer1($event)"></select200px>
+ <p>{{receivedValue1}}</p>
 
+ <app-select-wout-border300px [option]="optionOrderBy" (transferredValue)=" onDataTransferOrderBy($event)"></app-select-wout-border300px>
+ <p>{{reciveOrderBy}}</p>
 
 
 

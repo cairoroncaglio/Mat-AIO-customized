@@ -15,6 +15,25 @@ export class ComponentsAppViewComponent implements OnInit {
   {value: '5', viewValue: 'Option 5'},
   {value: '6', viewValue: 'Option 6'},
 ];
+
+optionRascunho1=[
+  {value: '1', viewValue: 'Option 6'},
+  {value: '2', viewValue: 'Option 7'},
+  {value: '3', viewValue: 'Option 8'},
+  {value: '4', viewValue: 'Option 9'},
+  {value: '5', viewValue: 'Option 10'},
+  {value: '6', viewValue: 'Option 11'},
+];
+receivedValue1='';
+
+optionOrderBy=[
+  {value: '1', viewValue: 'Nome'},
+  {value: '2', viewValue: 'Função'},
+  {value: '3', viewValue: 'Cargo'},
+  {value: '4', viewValue: 'Setor'},
+  {value: '5', viewValue: 'Turno'},
+];
+reciveOrderBy;
   constructor() {
   
   }
@@ -25,5 +44,11 @@ export class ComponentsAppViewComponent implements OnInit {
 
   onDataTransfer(valueSelect){
     this.receivedValue=valueSelect;
+  }
+  onDataTransfer1(valueSelect){
+    this.receivedValue1=valueSelect;
+  }
+  onDataTransferOrderBy(valueSelect){
+    this.reciveOrderBy=valueSelect;
   }
 }
