@@ -1,3 +1,5 @@
+import { BntOsComponent } from './components/bnt-os/bnt-os.component';
+
 import { ComponentsAppViewComponent } from './componentsMatAIO/components-app-view/components-app-view.component';
 import { SelectWoutBorder300pxComponent } from './components/select-wout-border300px/select-wout-border300px.component';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, SatDatepickerModule } from 'saturn-datepicker'
@@ -34,6 +36,11 @@ import { DataGridComponent } from './componentsMatAIO/data-grid/data-grid.compon
 import { OutputInputComboxExemploComponent } from './componentsMatAIO/output-input-combox-exemplo/output-input-combox-exemplo.component';
 import { Select300pxComponent } from './components/select300px/select300px.component';
 import { Select200pxComponent } from './components/select200px/select200px.component';
+import { BtnOBComponent } from './components/btn-ob/btn-ob.component';
+import { BtnOmComponent } from './components/btn-om/btn-om.component';
+import { BntScssComponent } from './components/bnt-scss/bnt-scss.component';
+
+
 
 
 
@@ -63,7 +70,11 @@ export interface SatDatepickerRangeValue<D> {
     OutputInputComboxExemploComponent,
     Select300pxComponent,
     Select200pxComponent,
-    SelectWoutBorder300pxComponent,ComponentsAppViewComponent
+    SelectWoutBorder300pxComponent,
+    ComponentsAppViewComponent,
+    BtnOBComponent,
+    BtnOmComponent, 
+    BntOsComponent, BntScssComponent
     
   ],
   imports: [

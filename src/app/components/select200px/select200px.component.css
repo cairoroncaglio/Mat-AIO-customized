@@ -23,7 +23,7 @@
   }
   
   .select200px ::ng-deep .mat-form-field-flex > .mat-form-field-infix {
-    padding: 0.2em 0px !important; 
+    padding: 0.15em 0px !important; 
   }
   
    ::ng-deep .mat-select-trigger {
@@ -77,18 +77,18 @@
   }
   
   .arrow-up { 
-    font-size: 28px; 
+    font-size: 24px; 
     color: #54565a;
     position: relative!important;
     margin-top: 30%;
-    margin-left: 45%;
+    margin-left: 65%;
   }
   .arrow-down { 
-    font-size: 28px; 
+    font-size: 24px; 
     color: #54565a;
     position: relative!important;
     margin-top: 30%;
-    margin-left: 45%;
+    margin-left: 65%;
   }
   
   .box-arrow{

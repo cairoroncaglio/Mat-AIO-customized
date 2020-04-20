@@ -16,6 +16,7 @@ export class ComponentsAppViewComponent implements OnInit {
   {value: '6', viewValue: 'Option 6'},
 ];
 
+receivedValue1='';
 optionRascunho1=[
   {value: '1', viewValue: 'Option 6'},
   {value: '2', viewValue: 'Option 7'},
@@ -24,8 +25,8 @@ optionRascunho1=[
   {value: '5', viewValue: 'Option 10'},
   {value: '6', viewValue: 'Option 11'},
 ];
-receivedValue1='';
 
+reciveOrderBy;
 optionOrderBy=[
   {value: '1', viewValue: 'Nome'},
   {value: '2', viewValue: 'Função'},
@@ -33,7 +34,7 @@ optionOrderBy=[
   {value: '4', viewValue: 'Setor'},
   {value: '5', viewValue: 'Turno'},
 ];
-reciveOrderBy;
+
   constructor() {
   
   }
@@ -51,4 +52,11 @@ reciveOrderBy;
   onDataTransferOrderBy(valueSelect){
     this.reciveOrderBy=valueSelect;
   }
+  disableButton=false;
+  btnClick(){
+    this.disableButton=!this.disableButton;
+  }
+  
+ 
+
 }

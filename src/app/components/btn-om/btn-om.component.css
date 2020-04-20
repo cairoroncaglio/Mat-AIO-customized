@@ -1,0 +1,16 @@
+.bnt-om{
+    font-family: "ABInBevHeadlines", sans-serif !important;
+    font-weight: 500;
+    padding-top: 4px!important;
+    padding-bottom: 4px!important;
+}
+.lbl-btn{ 
+    padding-left:32px;
+    padding-right: 32px;
+    font-size: 16px;
+}
+.material-icons .check-circle{
+    height: 4px;
+    width: 4px;
+    color:red;
+}

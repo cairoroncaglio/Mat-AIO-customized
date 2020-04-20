@@ -1,0 +1,16 @@
+.bnt-scss{
+    font-size: 16px;
+    font-family: "ABInBevHeadlines", sans-serif !important;
+    font-weight: 500;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.lbl-btn{ 
+    padding-left:8px;
+    padding-right: 16px;
+}
+.check-circle{
+    font-size: 16px;
+    position: relative;
+    padding-left:16px;
+}
